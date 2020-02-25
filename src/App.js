@@ -62,7 +62,7 @@ function App() {
 
       {/*-----------Article starts-----------*/}
       <h2>
-        Here’s 3,5 reasons you should{" "}
+        Here’s 3&frac12; reasons you should{" "}
         <span role="img" aria-label="emoji">
           &#128175;
         </span>{" "}
