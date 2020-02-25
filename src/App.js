@@ -87,11 +87,7 @@ function App() {
           My coding journey spans a little under a year. Everything I know I
           learned online. Unthinkable at first, I now strongly believe - there’s
           nothing you cannot learn, not a question you won’t find an answer to
-          on the internet (provided good connection and some patience
-          <span role="img" aria-label="emoji">
-            &#10071;
-          </span>
-          ).
+          on the internet (provided good connection and some patience).
         </p>
 
         <p>
@@ -100,7 +96,7 @@ function App() {
         </p>
 
         <p>
-          I’m now proud to call myself a React (MERN stack) developer and be
+          I’m now proud to call myself a React (MERN stack) developer and to be
           able to code almost any part of UI from scratch (seriously, my
           responsive design is so fluid - you’ll want to resize that window over
           and over again). What looked like matrix in the beginning is now a
@@ -161,8 +157,9 @@ function App() {
         <p>
           We live in a world of ever increasing technology integration, where
           people are overstimulated with noise on a daily basis. In a world
-          where a phone is an extension of human arm, people depend on balanced
-          sleek UI designs to alleviate them from this sensory overload.{" "}
+          where a phone is an extension of the human arm, people depend on
+          balanced sleek UI designs to alleviate them from this sensory
+          overload.{" "}
         </p>
         <p>
           Just like that, providing depth through simplicity while making

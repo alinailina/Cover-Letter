@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./index.scss";
 import App from "./App";
-//import CV from "./components/CV";
 
 ReactDOM.render(<App />, document.getElementById("root"));
