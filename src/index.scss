@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
-
+// Media queries
 @mixin phone {
   @media only screen and (max-width: 768px) {
     @content;
@@ -18,22 +17,189 @@
   }
 }
 
-body {
+// Colors
+$red: rgb(237, 52, 14);
+// #ED340E
+$black: #131313;
+$nude: #f8f7e8;
+$gray: rgba(19, 19, 19, 0.1);
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Brasley-Light";
   font-weight: 300;
-  // Background grid
-  background-size: 70px 70px;
-  background-image: linear-gradient(
-      to right,
-      rgb(240, 240, 240) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgb(240, 240, 240) 1px, transparent 1px);
-  background-attachment: fixed;
+  background-color: $nude;
+
   // Page transitions
-  animation: fadein 0.5s;
-  -moz-animation: fadein 0.5s;
-  -webkit-animation: fadein 0.5s;
-  -o-animation: fadein 0.5s;
+  animation: fadein 1s ease-in-out;
+  -webkit-animation: fadein 1s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s ease-in-out; /* Firefox < 16 */
+  -ms-animation: fadein 1s ease-in-out; /* Internet Explorer */
+  -o-animation: fadein 1s ease-in-out; /* Opera < 12.1 */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Firefox < 16
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Safari, Chrome and Opera > 12.1
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Internet Explorer
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Opera < 12.1
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Fonts
+$regular: "Brasley-Regular";
+$medium: "Brasley-Medium";
+$semi-bold: "Brasley-SemiBold";
+$bold: "Brasley-Bold";
+
+@font-face {
+  font-family: "Brasley-Thin";
+  font-style: normal;
+  src: local("Brasley-Thin"), local("Brasley-Thin"),
+    url("./assets/fonts/Brasley-Thin/Brasley-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/Brasley-Thin/Brasley-Thin.otf") format("otf"),
+    url("./assets/fonts/Brasley-Thin/Brasley-Thin.woff2") format("woff2"),
+    url("./assets/fonts/Brasley-Thin/Brasley-Thin.woff") format("woff"),
+    url("./assets/fonts/Brasley-Thin/Brasley-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Brasley-Light";
+  font-style: normal;
+  src: local("Brasley-Light"), local("Brasley-Light"),
+    url("./assets/fonts/Brasley-Light/Brasley-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/Brasley-Light/Brasley-Light.otf") format("otf"),
+    url("./assets/fonts/Brasley-Light/Brasley-Light.woff2") format("woff2"),
+    url("./assets/fonts/Brasley-Light/Brasley-Light.woff") format("woff"),
+    url("./assets/fonts/Brasley-Light/Brasley-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Brasley-Regular";
+  font-style: normal;
+  src: local("Brasley-Regular"), local("Brasley-Regular"),
+    url("./assets/fonts/Brasley-Regular/Brasley-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/Brasley-Regular/Brasley-Regular.otf") format("otf"),
+    url("./assets/fonts/Brasley-Regular/Brasley-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Brasley-Regular/Brasley-Regular.woff") format("woff"),
+    url("./assets/fonts/Brasley-Regular/Brasley-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Brasley-Medium";
+  font-style: normal;
+  src: local("Brasley-Medium"), local("Brasley-Medium"),
+    url("./assets/fonts/Brasley-Medium/Brasley-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/Brasley-Medium/Brasley-Medium.otf") format("otf"),
+    url("./assets/fonts/Brasley-Medium/Brasley-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Brasley-Medium/Brasley-Medium.woff") format("woff"),
+    url("./assets/fonts/Brasley-Medium/Brasley-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Brasley-SemiBold";
+  font-style: normal;
+  src: local("Brasley-SemiBold"), local("Brasley-SemiBold"),
+    url("./assets/fonts/Brasley-SemiBold/Brasley-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/Brasley-SemiBold/Brasley-SemiBold.otf") format("otf"),
+    url("./assets/fonts/Brasley-SemiBold/Brasley-SemiBold.woff2")
+      format("woff2"),
+    url("./assets/fonts/Brasley-SemiBold/Brasley-SemiBold.woff") format("woff"),
+    url("./assets/fonts/Brasley-SemiBold/Brasley-SemiBold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Brasley-Bold";
+  font-style: normal;
+  src: local("Brasley-Bold"), local("Brasley-Bold"),
+    url("./assets/fonts/Brasley-Bold/Brasley-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/Brasley-Bold/Brasley-Bold.otf") format("otf"),
+    url("./assets/fonts/Brasley-Bold/Brasley-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Brasley-Bold/Brasley-Bold.woff") format("woff"),
+    url("./assets/fonts/Brasley-Bold/Brasley-Bold.ttf") format("truetype");
+}
+
+@mixin snap-scroll {
+  height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+
+  > * {
+    scroll-snap-align: start;
+    // + add height in place for each element
+  }
+}
+
+@mixin child-container {
+  margin: 0 auto;
+
+  @include phone {
+    width: 90vw;
+  }
+
+  @include tablet {
+    width: 65vw;
+  }
+
+  @include desktop {
+    width: 60vw;
+  }
+}
+
+@mixin border {
+  border: 1px solid red;
+  // for dev purposes
 }
