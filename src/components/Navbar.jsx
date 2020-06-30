@@ -32,7 +32,6 @@ const Navbar = () => {
         <li>
           <Link to="faq">FAQ</Link>
         </li>
-
         <li>
           <div>
             <a
