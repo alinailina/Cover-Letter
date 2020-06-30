@@ -291,11 +291,8 @@ aside {
 
     > div {
       a {
-        font-family: $regular;
         font-size: 1.25rem;
-        span {
-          font-family: $medium;
-        }
+
         span:last-of-type {
           img {
             width: 20px;
@@ -392,14 +389,19 @@ footer {
       text-decoration: underline;
     }
   }
+
   a,
   p {
     font-family: $regular;
-    color: $black;
+    color: $nude;
     padding: 25px 10px;
+
+    @include phone {
+      padding: 15px 10px;
+    }
   }
 
   @include phone {
-    padding: 25px 0;
+    padding: 10px;
   }
 }
