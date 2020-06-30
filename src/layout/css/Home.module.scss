@@ -57,14 +57,23 @@
       > div {
         h1 {
           font-size: 10vw;
-        }
-
-        p,
-        a {
-          font-size: 1.25rem;
-          font-family: $regular;
+          span:first-of-type {
+            font-size: 20vw;
+          }
         }
       }
+
+      // > div {
+      //   h1 {
+      //     font-size: 10vw;
+      //   }
+
+      //   p,
+      //   a {
+      //     font-size: 1.25rem;
+      //     font-family: $regular;
+      //   }
+      // }
     }
   }
 

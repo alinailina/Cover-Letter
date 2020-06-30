@@ -16,8 +16,9 @@ const Home = () => {
           <div>
             {" "}
             <h1>
-              Hi, I'm Alina Ilina, <br />a Web Developer &{" "}
-              <span>UI Imagineer</span>
+              <span> Hi,</span>
+              <br /> <br />
+              I'm Alina Ilina, <br />a Web Developer & <span>UI Imagineer</span>
               , <br />
               based in Helsinki, Finland.
             </h1>

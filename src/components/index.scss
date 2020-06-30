@@ -348,6 +348,10 @@ aside {
         font-size: 1.5rem;
       }
 
+      p {
+        display: none;
+      }
+
       &:first-child {
         border-right: 2px solid $black;
       }
