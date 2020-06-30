@@ -18,7 +18,9 @@
 }
 
 // Colors
+
 $red: rgb(237, 52, 14);
+
 // #ED340E
 $black: #131313;
 $nude: #f8f7e8;
@@ -172,26 +174,17 @@ $bold: "Brasley-Bold";
     url("./assets/fonts/Brasley-Bold/Brasley-Bold.ttf") format("truetype");
 }
 
-@mixin snap-scroll {
-  height: 100vh;
-  overflow: scroll;
-  scroll-snap-type: y mandatory;
-
-  > * {
-    scroll-snap-align: start;
-    // + add height in place for each element
-  }
-}
-
 @mixin child-container {
   margin: 0 auto;
 
   @include phone {
     width: 90vw;
+    //border: 1px solid red;
   }
 
   @include tablet {
-    width: 65vw;
+    width: 80vw;
+    //border: 1px solid red;
   }
 
   @include desktop {

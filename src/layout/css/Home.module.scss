@@ -11,11 +11,12 @@
 
     > div {
       h1 {
-        font-family: $semi-bold;
+        font-family: $bold;
         font-size: 4rem;
         max-width: 10em;
         line-height: 1.25;
         margin-bottom: 25px;
+
         span {
           color: $red;
         }

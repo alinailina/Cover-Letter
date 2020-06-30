@@ -6,8 +6,8 @@ const CTA = () => {
     <div className="contact">
       {" "}
       <h2>
-        Let's work together! <br />
-        &mdash; Get in touch!
+        Let's work together <br />
+        &mdash; Get in touch
       </h2>
       <div>
         <a href="tel:+358465935910">
