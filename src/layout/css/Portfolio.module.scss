@@ -49,13 +49,13 @@
         margin-right: 25px;
         input {
           border: none;
+          border-radius: none;
           border-bottom: 2px solid $black;
           background-color: inherit;
           outline: none;
           font-family: $regular;
           font-size: 1.5rem;
           padding: 10px 2px;
-          -webkit-appearance: none;
         }
       }
 
