@@ -393,6 +393,7 @@ footer {
   a,
   p {
     font-family: $regular;
+    color: $black;
     padding: 25px 10px;
 
     @include phone {
