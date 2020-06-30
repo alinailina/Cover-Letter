@@ -16,9 +16,8 @@ const Home = () => {
           <div>
             {" "}
             <h1>
-              <span> Hi,</span>
-              <br /> <br />
-              I'm Alina Ilina, <br />a Web Developer & <span>UI Imagineer</span>
+              <span> Hey,</span>I<span>,</span>
+              m Alina Ilina, <br />a Web Developer & <span>UI Imagineer</span>
               , <br />
               based in Helsinki, Finland.
             </h1>
@@ -31,23 +30,23 @@ const Home = () => {
         </section>
 
         <section>
-          <h2>What I do:</h2>
+          <h2>What I do</h2>
           <ul>
             <li>
-              <img
-                className={css.svg1}
-                src={require("../assets/svgs/UI Elements/video.svg")}
-                alt=""
-                width="300px"
-              />
+              {" "}
+              <div>
+                {" "}
+                <img
+                  className={css.svg1}
+                  src={require("../assets/svgs/UI Elements/video.svg")}
+                  alt=""
+                  width="300px"
+                />
+              </div>{" "}
+              <p> Web development</p>
             </li>
             <li>
-              <p>Web development</p>
-            </li>
-            <li>
-              <p>Mobile app development</p>
-            </li>
-            <li>
+              {" "}
               <div>
                 {" "}
                 <img
@@ -56,30 +55,25 @@ const Home = () => {
                   alt=""
                   width="100px"
                 />{" "}
-              </div>
-              <div>
                 <img
                   className={css.svg3}
                   src={require("../assets/svgs/UI Elements/app-notification.svg")}
                   alt=""
                   width="120px"
                 />{" "}
-              </div>
+              </div>{" "}
+              <p>Mobile app development</p>
             </li>{" "}
             <li>
-              <img
-                className={css.svg4}
-                src={require("../assets/svgs/UI Elements/size.svg")}
-                alt=""
-                width="120px"
-              />
-            </li>
-            <li>
-              <p>
-                Responsive design/
-                <br />
-                UI design
-              </p>
+              <div>
+                <img
+                  className={css.svg4}
+                  src={require("../assets/svgs/UI Elements/size.svg")}
+                  alt=""
+                  width="120px"
+                />
+              </div>
+              <p>Responsive design, UI design</p>
             </li>
           </ul>
         </section>
