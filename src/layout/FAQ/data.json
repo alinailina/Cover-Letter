@@ -1,28 +1,28 @@
 [
   {
     "id": 1,
-    "question": "1 - I want to build a website/mobile app (freelance), can you help?",
+    "question": "I want to build a website/mobile app (freelance), can you help?",
     "answer": "<p>Sure thing! I’m available as an individual UI designer and developer for small-scale projects. I can help you revamp your current interface (improve usability, optimize for mobile screens, etc.), or build your website or app from scratch, i.e.:</p><ul><li>&mdash; Complete your user research</li><li>&mdash; Run content audit</li><li>&mdash; Create wireframes and navigation flowcharts</li><li>&mdash; Make UI mockups based on your desired colour and typography schemes, as well as accepted usability principles </li><li>&mdash; Depending on the type of app, your timeline and resources, I can make a high-fidelity interactive prototype using tools like <a href=\"https://www.figma.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Figma</a> and  <a href=\"https://www.adobe.com/products/xd.html\" target=\"_blank\" rel=\"noopener noreferrer\">Adobe XD</a> and test it with potential users </li><li>&mdash; And finally, build your application using my portfolio technologies! </li></ul>"
   },
   {
     "id": 2,
-    "question": "2 - I want to add to my (in-house) engineering team, are you a good fit?",
-    "answer": ""
+    "question": "I want to add to my (in-house) engineering team, are you a good fit?",
+    "answer": "<p>Ask again later</p>"
   },
   {
     "id": 3,
-    "question": "3 - What technologies do you use?",
+    "question": "What technologies do you use?",
     "answer": "<p>Here’s a list of tools and technologies that power my applications:</p><ul><li>&mdash; React.js<li>&mdash; Vanilla Javascript</li><li>&mdash; Node.js</li><li>&mdash; Axios</li><li>&mdash; Interfacing with REST API</li><li>&mdash; WordPress (as a headless CMS)</li><li>&mdash; Git version control</li><li>&mdash; iOS ecosystem</li><li>&mdash; Figma (design & prototyping)</li><li>&mdash; Material UI</li><li>&mdash; Bootstrap</li><li>&mdash; CSS/SASS</li><li>&mdash; HTML5</li></ul><p> Can’t find the desired technology on the list? <a href=“mailto:alinailina.random@gmail.com”>Drop a message</a>, let’s see if I can learn something new for your project!</p>"
   },
 
   {
     "id": 5,
-    "question": "5 - Do we share the same culture? ",
+    "question": "Do we share the same culture? ",
     "answer": "<p>I believe in the power of honest communication, trust, transparency, and short feedback cycle. I like to take ownership of my work and have a personal impact on products I’m developing.</p><p>I’m attracted to organizations with a strong learning culture and work ethics, that offer a career destination and an opportunity to make a meaningful difference in the lives of their clients.</p>"
   },
   {
     "id": 5,
-    "question": "6 - What is your Superpower?",
+    "question": "What is your Superpower?",
     "answer": "<p>I’m a neat freak. I have a passion for highly polished things and like to do everything well. In developer terms, that means consistent design, no unintentional asymmetry, spaghetti code, or technical debt. \"Detail-oriented\" is not just another word I put on my resume - it’s my brand. I like to complete my work conscientiously - with a touch of awe(some).</p>"
   }
 ]

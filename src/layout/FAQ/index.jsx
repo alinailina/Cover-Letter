@@ -20,7 +20,7 @@ const FAQ = () => {
       <section className="form">
         <header>
           {" "}
-          <h3>Can't find an answer to your question?</h3>
+          <h3>Haven't found your answers?</h3>
           <p>
             Help me improve this page &mdash; ask away in the form down below!
           </p>

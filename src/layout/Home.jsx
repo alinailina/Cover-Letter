@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Styles
-import "./css/index.scss";
+
 import css from "./css/Home.module.scss";
 
 // Children

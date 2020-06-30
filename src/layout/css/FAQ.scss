@@ -1,4 +1,4 @@
-@import "./index.scss";
+@import "../../index.scss";
 
 .faq {
   // Header
@@ -11,24 +11,14 @@
       font-size: 3rem;
 
       @include phone {
-        font-size: 6vw;
+        font-size: 8vw;
       }
-    }
-  }
-
-  // Intro text
-  section:first-of-type {
-    @include child-container;
-    margin-bottom: 25px;
-    p {
-      font-size: 1.75rem;
-      line-height: 1.75;
-      //margin-bottom: 25px;
     }
   }
 
   // Accordion
   .accordion {
+    //border: 1px solid red;
     @include child-container;
 
     .item {
@@ -40,42 +30,42 @@
 
       // Question
       .question {
-        background-color: rgba(19, 19, 19, 0.05);
-        border-radius: 5px;
-        padding: 0 10px;
         cursor: pointer;
-        height: 75px;
         display: flex;
         align-items: center;
 
         p {
-          font-size: 1.25rem;
-          font-family: $regular;
+          font-size: 1.75rem;
           line-height: 1.75;
-          padding: 0px 5px;
+
+          @include phone {
+            font-size: 6vw;
+            line-height: 1.5;
+          }
         }
 
         &:hover {
-          background-color: $gray;
-        }
-
-        @include phone {
-          height: auto;
+          p {
+            color: $red;
+          }
         }
       }
 
       // Answer
       .answer {
-        // border: 1px solid red;
         overflow: hidden;
         transition: max-height 0.5s ease;
-        padding: 5px;
-        margin: 5px;
+        padding: 5px 0;
+        margin: 10px 0 25px;
 
         p {
           font-size: 1.25rem;
           line-height: 1.75;
           margin-bottom: 10px;
+
+          @include phone {
+            line-height: 1.5;
+          }
         }
 
         a {
@@ -84,6 +74,7 @@
             color: $red;
           }
         }
+
         ul {
           margin-bottom: 10px;
           li {
@@ -97,27 +88,45 @@
 
   // Form
   .form {
+    @include child-container;
+    padding: 0 0 50px;
+
     header {
-      padding: 100px 0 50px;
+      padding: 75px 0 50px;
+
       h3 {
         font-family: $medium;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 25px;
       }
+
       p {
         font-size: 1.75rem;
+        line-height: 1.75;
+      }
+
+      @include phone {
+        h3 {
+          font-size: 6vw;
+        }
+
+        p {
+          font-size: 1.25rem;
+          line-height: 1.5;
+        }
       }
     }
 
     form {
       //border: 1px solid red;
       background-color: $nude;
-      padding: 25px 0;
       display: flex;
       flex-direction: column;
+
       > div {
         display: flex;
         justify-content: space-between;
+
         label {
           width: 45%;
         }
@@ -134,7 +143,6 @@
         display: flex;
         flex-direction: column;
         font-size: 1.25rem;
-        //font-family: $regular;
         margin: 25px 0;
         input,
         textarea {
@@ -145,7 +153,10 @@
           font-family: $regular;
           font-size: 1.5rem;
           padding: 5px 2px;
+          -webkit-appearance: none;
+          border-radius: 0;
         }
+
         textarea {
           //background-color: $gray;
           resize: none;
@@ -161,18 +172,24 @@
 
         input[type="submit"] {
           width: 200px;
-          //  margin-left: auto;
           font-size: 1.5rem;
           padding: 8px 0;
           border: 2px solid $black;
           border-radius: 2px;
-          background-color: inherit;
+          color: $black;
+          background-color: $nude;
           cursor: pointer;
+          -webkit-appearance: none;
 
-          &:hover {
-            color: $nude;
+          &:hover,
+          &:active {
             border: 2px solid $black;
+            color: $nude;
             background-color: $black;
+          }
+
+          @include phone {
+            font-size: 1.25rem;
           }
         }
       }
