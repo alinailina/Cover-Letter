@@ -285,6 +285,7 @@ aside {
   }
 
   @include phone {
+    padding: 25px 0;
     h2 {
       font-size: 6vw;
     }
@@ -314,7 +315,7 @@ aside {
 
   > div {
     width: 50%;
-    height: 175px;
+    height: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,10 +345,10 @@ aside {
   }
 
   @include phone {
-    margin: 25px auto;
+    margin: 25px auto 50px;
 
     > div {
-      height: 125px;
+      height: 100px;
 
       a {
         font-size: 1.5rem;
