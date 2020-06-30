@@ -38,4 +38,21 @@
       }
     }
   }
+
+  @include phone {
+    // Hero img
+    > div:first-of-type {
+      img {
+        height: 40vh;
+      }
+    }
+
+    // Text
+    section:first-of-type {
+      padding: 45vh 0 25px;
+      p {
+        font-family: $regular;
+      }
+    }
+  }
 }
