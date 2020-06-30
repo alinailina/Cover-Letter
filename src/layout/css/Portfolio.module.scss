@@ -10,7 +10,7 @@
       font-size: 3rem;
 
       @include phone {
-        font-size: 6vw;
+        font-size: 8vw;
       }
     }
   }
@@ -31,6 +31,7 @@
 
       @include phone {
         font-size: 1.25rem;
+        line-height: 1.5;
       }
     }
 
@@ -54,6 +55,7 @@
           font-family: $regular;
           font-size: 1.5rem;
           padding: 10px 2px;
+          -webkit-appearance: none;
         }
       }
 
@@ -63,12 +65,14 @@
         padding: 8px 0;
         border: 2px solid $black;
         border-radius: 2px;
-        background-color: inherit;
+        color: $black;
+        background-color: $nude;
         cursor: pointer;
+        -webkit-appearance: none;
 
-        &:hover {
-          color: $nude;
+        &:hover:focus:active {
           border: 2px solid $black;
+          color: $nude;
           background-color: $black;
         }
 
