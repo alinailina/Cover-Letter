@@ -574,5 +574,18 @@ footer {
         }
       }
     }
+
+    .links {
+      > div {
+        a {
+          font-size: 1rem;
+        }
+      }
+
+      // Copyright
+      p {
+        color: $nude;
+      }
+    }
   }
 }
