@@ -8,8 +8,6 @@ import "../css/FAQ.scss";
 import Acc from "./Acc";
 import Form from "./Form";
 
-import CTA from "../../components/CTA";
-
 const FAQ = () => {
   return (
     <div className="faq">
@@ -27,7 +25,6 @@ const FAQ = () => {
         </header>
         <Form />
       </section>
-
       <section className="bottom-nav">
         <div>
           <Link to="about">About</Link>
