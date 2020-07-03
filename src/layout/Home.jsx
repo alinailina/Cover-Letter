@@ -78,8 +78,6 @@ const Home = () => {
           </ul>
         </section>
 
-        <CTA />
-
         <section className="bottom-nav">
           <div>
             <Link to="/portfolio">My works</Link>

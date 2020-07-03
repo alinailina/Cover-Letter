@@ -27,7 +27,7 @@ const FAQ = () => {
         </header>
         <Form />
       </section>
-      <CTA />
+
       <section className="bottom-nav">
         <div>
           <Link to="about">About</Link>

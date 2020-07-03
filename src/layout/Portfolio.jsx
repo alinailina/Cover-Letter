@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 // Styles
 import css from "./css/Portfolio.module.scss";
 
-// Children
-import CTA from "../components/CTA";
-
 const Portfolio = () => {
   return (
     <div className={css.container}>
@@ -34,7 +31,7 @@ const Portfolio = () => {
           how I can be of service today.
         </p>
       </section>
-      <CTA />
+
       <section className="bottom-nav">
         <div>
           <Link to="/about">About</Link>

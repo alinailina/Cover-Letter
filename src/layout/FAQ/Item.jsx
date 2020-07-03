@@ -17,7 +17,7 @@ const Item = ({ question, children }) => {
   return (
     <div className="item">
       <div className="question" onClick={toogleActive}>
-        <p> + {question}</p>
+        <p>{question}</p>
       </div>
       <div className="answer" ref={answerRef}>
         {children}

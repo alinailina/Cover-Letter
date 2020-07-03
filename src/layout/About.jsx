@@ -7,6 +7,7 @@ import css from "./css/About.module.scss";
 
 // Children
 import CTA from "../components/CTA";
+import New from "../components/New";
 
 const About = () => {
   return (
@@ -42,7 +43,7 @@ const About = () => {
           Developer and a Human.
         </p>
       </section>
-      <CTA />
+
       <section className="bottom-nav">
         <div>
           <Link to="portfolio">My works</Link>

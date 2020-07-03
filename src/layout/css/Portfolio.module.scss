@@ -45,6 +45,7 @@
         width: 50%;
         display: flex;
         flex-direction: column;
+
         font-size: 1.25rem;
         margin-right: 25px;
         input {
@@ -62,6 +63,7 @@
 
       input[type="submit"] {
         width: 200px;
+        font-family: $medium;
         font-size: 1.5rem;
         padding: 8px 0;
         border: 2px solid $black;
