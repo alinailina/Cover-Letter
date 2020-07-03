@@ -2,12 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Styles
-
 import css from "./css/About.module.scss";
-
-// Children
-import CTA from "../components/CTA";
-import New from "../components/New";
 
 const About = () => {
   return (
@@ -15,7 +10,6 @@ const About = () => {
       <div>
         <img src={require("../assets/photos/hello-world.jpg")} alt="portrait" />
       </div>
-
       <section>
         <p>
           My name is Alina Ilina. I’m a Web Developer and UI Imagineer (a
@@ -43,7 +37,6 @@ const About = () => {
           Developer and a Human.
         </p>
       </section>
-
       <section className="bottom-nav">
         <div>
           <Link to="portfolio">My works</Link>

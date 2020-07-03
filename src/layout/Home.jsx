@@ -5,9 +5,6 @@ import { Link } from "react-router-dom";
 
 import css from "./css/Home.module.scss";
 
-// Children
-import CTA from "../components/CTA";
-
 const Home = () => {
   return (
     <div>

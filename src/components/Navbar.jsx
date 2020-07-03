@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState(false);
 
   const handleToggle = () => {
     setActive(!active);
@@ -24,13 +24,13 @@ const Navbar = () => {
       </div>
       <ul className={active ? "active" : ""}>
         <li>
-          <Link to="about">About</Link>
+          <a href="/about">About</a>
         </li>
         <li>
-          <Link to="portfolio">My works</Link>
+          <a href="/portfolio">My works</a>
         </li>
         <li>
-          <Link to="faq">FAQ</Link>
+          <a href="/faq">FAQ</a>
         </li>
         <li>
           <div>
