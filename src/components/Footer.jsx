@@ -4,15 +4,10 @@ import "./index.scss";
 const Footer = () => {
   return (
     <footer>
-      <div className="title">
-        <div>
-          {" "}
-          <h3>a &mdash; i</h3>{" "}
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
+      <div>
+        <p>Get in touch</p>
       </div>
-
-      <div className="contacts">
+      <div>
         <div>
           {" "}
           <a href="tel:+358465935910">
@@ -32,8 +27,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-
-      <div className="links">
+      <div>
         <div>
           {" "}
           <a
@@ -58,7 +52,7 @@ const Footer = () => {
             <span>/</span>Github
           </a>
         </div>
-        <p>© - a &mdash; i, 2020.</p>
+        <p>© - ai, 2020.</p>
       </div>
     </footer>
   );

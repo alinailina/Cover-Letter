@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav>
       <a href="/">
         <div className={active ? "logo active" : "logo"}>
-          <p>a&mdash;i</p>
+          <p>ai</p>
         </div>
       </a>
       <div

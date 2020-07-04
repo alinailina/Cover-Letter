@@ -315,12 +315,11 @@ aside {
 
 // Bottom nav
 .bottom-nav {
-  //@include child-container;
   margin: 50px auto 100px;
   display: flex;
 
   > div {
-    // border: 1px solid red;
+    //border: 1px solid red;
     width: 50%;
     height: 225px;
     display: flex;
@@ -335,6 +334,15 @@ aside {
       text-decoration: none;
       outline: none;
       margin-bottom: 10px;
+
+      &::after {
+        content: " \2197";
+        position: relative;
+        top: -10px;
+        left: 5px;
+        display: inline-block;
+      }
+
       &:hover {
         text-decoration: underline;
       }
@@ -348,6 +356,9 @@ aside {
 
     &:first-of-type {
       border-right: 3px solid $black;
+    }
+
+    &:last-of-type {
     }
   }
 
@@ -382,44 +393,31 @@ footer {
   justify-content: space-between;
   padding: 75px 0 25px;
 
-  .title {
+  // CTA
+  > div:first-of-type {
     //border: 1px solid red;
-    width: 60%;
+    width: 50%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-
-    > div {
-      display: flex;
-      flex-direction: column;
-    }
-
-    h3 {
+    p {
       //border: 1px solid red;
       font-size: 2.5rem;
-      color: $nude;
-      margin-bottom: 25px;
+      line-height: 1.75;
       font-family: $regular;
-      //color: $red;
-    }
-
-    p {
-      // border: 1px solid red;
-      font-size: 1.25rem;
-      line-height: 1.5;
       color: $nude;
-      max-width: 20em;
     }
   }
 
-  .contacts {
+  // Contact info
+  > div:nth-of-type(2) {
     //border: 1px solid red;
-    width: 40%;
+    width: 50%;
     display: flex;
-
     align-items: center;
     justify-content: center;
 
+    // Inner container
     > div {
       display: flex;
       flex-direction: column;
@@ -427,8 +425,8 @@ footer {
       a {
         //border: 1px solid red;
         font-size: 1.75rem;
+        line-height: 1.25;
         color: $nude;
-        line-height: 1.75;
         text-decoration: none;
 
         span {
@@ -452,7 +450,8 @@ footer {
     }
   }
 
-  .links {
+  // Links
+  > div:nth-of-type(3) {
     //border: 1px solid red;
     width: 100%;
     display: flex;
@@ -463,13 +462,14 @@ footer {
 
     > div {
       margin-bottom: 15px;
+
       a {
         font-size: 1.25rem;
         line-height: 1.5;
         color: $nude;
         cursor: pointer;
         text-decoration: none;
-        padding: 0 10px;
+        padding: 10px;
 
         span {
           font-family: $regular;
@@ -487,48 +487,18 @@ footer {
     }
   }
 
-  // Mobile
-
   @include tablet {
-    justify-content: space-around;
-    .title {
-      width: 35%;
-    }
-
-    .contacts {
-      //border: 1px solid red;
-      width: 45%;
-      display: flex;
-
-      align-items: flex-end;
-      justify-content: center;
-
+    // Contact info
+    > div:nth-of-type(2) {
       > div {
-        display: flex;
-        flex-direction: column;
-
         a {
-          //border: 1px solid red;
-          font-size: 1.25rem;
-          color: $nude;
-          line-height: 1.5;
-          text-decoration: none;
-
-          span {
-            font-family: $regular;
-          }
-
-          &:hover {
-            text-decoration: underline;
-          }
+          font-size: 1.5rem;
 
           span:last-of-type {
             img {
-              width: 28px;
-              position: relative;
-              top: 4px;
-              left: -5px;
-              filter: invert(100%);
+              width: 23px;
+              top: 3px;
+              left: -4px;
             }
           }
         }
@@ -537,26 +507,19 @@ footer {
   }
 
   @include phone {
-    .title {
+    flex-direction: column;
+    //CTA
+    > div:first-of-type {
       width: 100%;
       margin-bottom: 25px;
 
-      h3 {
-        font-size: 6vw;
-        margin-bottom: 25px;
-        text-align: center;
-      }
-
       p {
-        font-size: 1.25rem;
-        line-height: 1.5;
-        color: $nude;
-        max-width: 20em;
-        text-align: center;
+        font-size: 2rem;
       }
     }
 
-    .contacts {
+    // Contact info
+    > div:nth-of-type(2) {
       width: 100%;
 
       > div {
@@ -575,16 +538,12 @@ footer {
       }
     }
 
-    .links {
+    // Links
+    > div:nth-of-type(3) {
       > div {
         a {
           font-size: 1rem;
         }
-      }
-
-      // Copyright
-      p {
-        color: $nude;
       }
     }
   }

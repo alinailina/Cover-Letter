@@ -1,247 +1,87 @@
 @import "../../index.scss";
 
 .container {
-  // Intro
-  section:first-of-type {
+  // Header
+  header {
+    padding: 200px 0 50px;
     @include child-container;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 250px 0 50px;
-
-    > div {
-      h1 {
-        font-family: $medium;
-        font-size: 4rem;
-        max-width: 10em;
-        line-height: 1.1;
-        margin-bottom: 50px;
-
-        span:first-of-type {
-          display: block;
-          margin-bottom: 50px;
-        }
-
-        span:nth-of-type(2) {
-          position: relative;
-          top: -40px;
-        }
-
-        span:nth-of-type(3) {
-          color: $red;
-        }
-      }
-
-      p {
-        margin-bottom: 25px;
-      }
-
-      a,
-      p {
-        font-size: 1.75rem;
-        line-height: 1.75;
-      }
-
-      a {
-        color: $black;
-        text-decoration: underline;
-        outline: none;
-        cursor: pointer;
-
-        &:hover {
-          color: $red;
-          text-decoration: none;
-        }
-      }
-    }
-
-    @include phone {
-      > div {
-        h1 {
-          font-size: 8vw;
-          span:first-of-type {
-            font-size: 16vw;
-          }
-
-          span:nth-of-type(2) {
-            top: -25px;
-          }
-        }
-
-        p,
-        a {
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-      }
-    }
-  }
-
-  // What I do
-  section:nth-of-type(2) {
-    //border: 1px solid red;
-    @include child-container;
-    padding: 50px 0 75px;
 
     h2 {
       font-family: $medium;
-      font-size: 2.5rem;
+      font-size: 6rem;
+
       @include phone {
-        font-size: 6vw;
-      }
-      padding: 25px 0 50px;
-    }
-
-    ul {
-      @include child-container;
-      display: flex;
-      flex-wrap: wrap;
-
-      li {
-        //border: 1px solid red;
-        width: 100%;
-        display: flex;
-        //flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-        padding: 50px 0;
-
-        > div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 50%;
-        }
-
-        // Svgs
-        .svg1 {
-          width: 175px;
-        }
-
-        .svg2 {
-          //border: 1px solid red;
-          width: 70px;
-        }
-
-        .svg3 {
-          //border: 1px solid red;
-          width: 70px;
-        }
-
-        .svg4 {
-          width: 105px;
-          align-self: center;
-        }
-
-        p {
-          //border: 1px solid red;
-          display: block;
-          width: 100%;
-          font-size: 1.25rem;
-          line-height: 1.75;
-          //text-align: center;
-          padding: 25px 0;
-          max-width: 10em;
-
-          @include phone {
-            font-size: 1.25rem;
-            line-height: 1.5;
-          }
-        }
-
-        @include tablet {
-          width: 30%;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-
-          p {
-            text-align: center;
-            max-width: 8em;
-          }
-        }
+        font-size: 12vw;
       }
     }
   }
 
-  // Footer
-  footer {
-    scroll-snap-align: start;
-    position: relative;
-    height: 30vh;
-    width: 80vw;
-    margin: 100px auto;
-    display: flex;
+  // Intro text
+  section:first-of-type {
+    //border: 1px solid red;
+    padding: 0 0 50px;
+    @include child-container;
+    h1 {
+      //border: 1px solid red;
+      display: block;
+      font-family: $regular;
+      font-size: 4rem;
+      margin-bottom: 25px;
+    }
 
-    > div {
-      width: 50%;
-      height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &:first-of-type {
-        border-right: 3px solid $black;
+    p {
+      margin-bottom: 25px;
+      span {
+        color: $red;
       }
     }
 
+    p {
+      font-size: 1.75rem;
+      line-height: 1.75;
+    }
+
     a {
+      font-size: 1.5rem;
       font-family: $regular;
-      font-size: 2.5rem;
       color: $black;
-      text-decoration: none;
+      text-decoration: underline;
       outline: none;
       cursor: pointer;
 
-      span {
-        img {
-          width: 35px;
-          margin-right: 10px;
-          position: relative;
-          top: 5px;
-          z-index: -1;
-        }
+      &::after {
+        content: " \2197";
+        position: relative;
+        top: -10px;
+        left: 5px;
+        display: inline-block;
       }
 
       &:hover {
-        text-decoration: underline;
+        color: $red;
+        text-decoration: none;
+      }
+    }
+
+    @include tablet {
+      p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+
+      a {
+        font-size: 1.25rem;
       }
     }
 
     @include phone {
-      width: 80vw;
-      flex-direction: column;
-      margin: 25px auto;
-
-      > div {
-        width: 100%;
-        height: 150px;
-        //border: 2px solid $black;
-
-        &:first-child {
-          border-right: none;
-        }
-
-        &:nth-of-type(2) {
-          display: flex;
-          height: 50px;
-
-          p {
-            font-size: 3rem;
-          }
-        }
+      p {
+        font-size: 1.25rem;
+        line-height: 1.5;
       }
 
       a {
-        font-size: 2rem;
-
-        span {
-          img {
-            width: 30px;
-            margin-right: 5px;
-            top: 4px;
-          }
-        }
+        font-size: 1rem;
       }
     }
   }
