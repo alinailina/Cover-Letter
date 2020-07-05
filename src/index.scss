@@ -19,10 +19,10 @@
 
 // Colors
 
-$red: rgb(237, 52, 14);
-
+//$red: rgb(237, 52, 14);
+$red: #ed340e;
 // #ED340E
-$black: #131313;
+$black: #323232;
 $nude: #f8f7e8;
 $gray: rgba(19, 19, 19, 0.1);
 
@@ -33,10 +33,10 @@ $gray: rgba(19, 19, 19, 0.1);
 }
 
 body {
-  font-family: "Brasley-Light";
+  font-family: "Brasley-Regular";
   font-weight: 300;
   background-color: $nude;
-
+  color: $black;
   // Page transitions
   animation: fadein 1s ease-in-out;
   -webkit-animation: fadein 1s ease-in-out; /* Safari, Chrome and Opera > 12.1 */

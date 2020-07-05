@@ -105,8 +105,8 @@ nav {
     }
 
     p {
-      font-size: 1.25rem;
-      font-family: "Brasley-Regular";
+      font-size: 1.5rem;
+      font-family: "Brasley-Medium";
       color: $nude;
       transition: color 1s ease;
     }
@@ -138,7 +138,7 @@ nav {
     .hamburger {
       width: 100%;
       height: 3px;
-      background: $red;
+      background: $black;
       border-radius: 1px;
       transition: all 0.5s ease;
       position: relative;
@@ -150,7 +150,7 @@ nav {
         position: absolute;
         width: 100%;
         height: 3px;
-        background: $red;
+        background: $black;
         border-radius: 1px;
         transition: 0.5s;
       }
@@ -349,16 +349,11 @@ aside {
     }
 
     p {
-      font-family: $regular;
-      // font-size: 1.25rem;
-      //color: $red;
+      font-size: 1.25rem;
     }
 
     &:first-of-type {
       border-right: 3px solid $black;
-    }
-
-    &:last-of-type {
     }
   }
 
@@ -395,16 +390,22 @@ footer {
 
   // CTA
   > div:first-of-type {
-    //border: 1px solid red;
+    // border: 1px solid red;
     width: 50%;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    p {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    h3 {
       //border: 1px solid red;
       font-size: 2.5rem;
-      line-height: 1.75;
-      font-family: $regular;
+      line-height: 1.5;
+      color: $nude;
+    }
+
+    p {
+      font-size: 1.25rem;
       color: $nude;
     }
   }
@@ -416,6 +417,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: 5px;
 
     // Inner container
     > div {
@@ -425,12 +428,12 @@ footer {
       a {
         //border: 1px solid red;
         font-size: 1.75rem;
-        line-height: 1.25;
+        line-height: 1.5;
         color: $nude;
         text-decoration: none;
 
         span {
-          font-family: $regular;
+          font-family: $medium;
         }
 
         &:hover {
@@ -508,13 +511,16 @@ footer {
 
   @include phone {
     flex-direction: column;
+
     //CTA
     > div:first-of-type {
       width: 100%;
       margin-bottom: 25px;
+      text-align: center;
 
-      p {
+      h3 {
         font-size: 2rem;
+        margin-bottom: 10px;
       }
     }
 
@@ -525,7 +531,6 @@ footer {
       > div {
         a {
           font-size: 1.25rem;
-          line-height: 1.5;
           text-align: center;
 
           span:last-of-type {

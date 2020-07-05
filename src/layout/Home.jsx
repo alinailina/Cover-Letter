@@ -7,32 +7,52 @@ import css from "./css/Home.module.scss";
 
 const Home = () => {
   return (
-    <div>
-      <div className={css.container}>
-        <header>
-          <h2>Hi,</h2>
-        </header>
-        <section>
+    <div className={css.container}>
+      <section className={css.hero}>
+        <h1>ai</h1>
+        <h2>
+          {" "}
+          Web and mobile apps <br />
+          with a touch of <span>awe(some)</span>
+        </h2>
+        <div>
+          <a href="tel:+358465935910">
+            <span>T.</span> +358465935910
+          </a>
+          <a href="mailto:alinailina.random@gmail.com">
+            <span>E.</span> ai.foreach@gmail.com
+          </a>{" "}
+        </div>
+        <div>
+          {" "}
+          <input type="submit" value="Leave request" />
+          <a href="/">Learn more</a>
+        </div>
+      </section>
+
+      <section className={css.intro}>
+        <h3>Hello,</h3>
+        <div>
           <p>
             My name is Alina Ilina. I'm a Web Developer &{" "}
             <span>UI Imagineer</span>, based in Helsinki, Finland. I make clean,
-            simple, predictable user interfaces for web and mobile apps that
-            meet high standards for usability, and scale.
+            predictable and simply awesome user interfaces for web and mobile
+            apps that meet high standards for usability, and scale.
           </p>
           <a href="/about">Read full story</a>
-        </section>
+        </div>
+      </section>
 
-        <section className="bottom-nav">
-          <div>
-            <Link to="/portfolio">My works</Link>
-            <p>(See what I've been up to)</p>
-          </div>
-          <div>
-            <Link to="/faq">FAQs</Link>
-            <p>(All you need to know)</p>
-          </div>
-        </section>
-      </div>
+      <section className="bottom-nav">
+        <div>
+          <Link to="/portfolio">My works</Link>
+          <p>(See what I've been up to)</p>
+        </div>
+        <div>
+          <Link to="/faq">FAQs</Link>
+          <p>(All you need to know)</p>
+        </div>
+      </section>
     </div>
   );
 };

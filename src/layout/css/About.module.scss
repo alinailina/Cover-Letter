@@ -11,6 +11,7 @@
       object-fit: cover;
       height: 50vh;
       filter: grayscale(0.7);
+      background-color: $red;
     }
   }
 
@@ -18,24 +19,51 @@
   section:first-of-type {
     @include child-container;
     padding: 60vh 0 25px;
+
     p {
       //font-family: $regular;
       font-size: 1.75rem;
-      line-height: 1.75;
+      line-height: 1.5;
       margin-bottom: 25px;
       a {
+        font-size: inherit;
         color: inherit;
         transition: all 0.25s ease;
         &:hover {
           text-decoration: none;
           color: $red;
         }
+
+        &::after {
+          content: " \2197";
+          position: relative;
+          top: -10px;
+          display: inline-block;
+        }
       }
     }
+
+    @include tablet {
+      p {
+        font-size: 1.5rem;
+
+        a {
+          &::after {
+            top: -8px;
+          }
+        }
+      }
+    }
+
     @include phone {
       p {
         font-size: 1.25rem;
-        line-height: 1.5;
+
+        a {
+          &::after {
+            top: -6px;
+          }
+        }
       }
     }
   }

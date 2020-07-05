@@ -5,7 +5,11 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <p>Get in touch</p>
+        <div>
+          {" "}
+          <h3>Get in touch</h3>
+          <p>I'd love to hear from you </p>
+        </div>
       </div>
       <div>
         <div>
