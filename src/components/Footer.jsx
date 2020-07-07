@@ -23,7 +23,7 @@ const Footer = () => {
           <a href="/">
             <span>
               <img
-                src={require("../assets/download.png")}
+                src={require("../assets/download.svg")}
                 alt="download-icon"
               />
             </span>{" "}
