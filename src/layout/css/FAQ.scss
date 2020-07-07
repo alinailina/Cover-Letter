@@ -16,6 +16,25 @@
     }
   }
 
+  // Intro text
+  section:first-of-type {
+    padding: 0 0 50px;
+    @include child-container;
+
+    p {
+      font-size: 1.75rem;
+      line-height: 1.5;
+
+      @include tablet {
+        font-size: 1.5rem;
+      }
+
+      @include phone {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
   // Accordion
   .accordion {
     //border: 1px solid red;
@@ -25,28 +44,74 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      max-width: 60em;
-      margin: 0 auto;
 
       // Question
       .question {
         cursor: pointer;
         display: flex;
         align-items: center;
+        border: 2px solid $black;
+        border-radius: 2px;
+        padding: 10px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
+        // Text
         p {
+          width: 90%;
           font-size: 1.75rem;
-          line-height: 1.75;
+          line-height: 1.5;
+
+          @include tablet {
+            font-size: 1.5rem;
+          }
 
           @include phone {
-            font-size: 6vw;
-            line-height: 1.5;
+            font-size: 1.25rem;
           }
         }
 
-        &:hover {
-          p {
-            color: $red;
+        // Toggle indicator
+        .toggle {
+          width: 50px;
+          height: 50px;
+          border: 0;
+          position: relative;
+          outline: none;
+
+          span {
+            position: absolute;
+            transition: 0.3s;
+            background: $black;
+            border-radius: 1px;
+
+            &:first-of-type {
+              top: 32%;
+              bottom: 32%;
+              width: 2px;
+              left: 52%;
+            }
+
+            &:last-of-type {
+              left: 36%;
+              right: 27%;
+              height: 2px;
+              top: 48%;
+            }
+          }
+
+          &.active {
+            background-color: transparent;
+            span:first-of-type {
+              transform: rotate(90deg);
+            }
+
+            span:last-of-type {
+              transform: rotate(90deg);
+              left: 50%;
+              right: 50%;
+            }
           }
         }
       }
@@ -55,17 +120,13 @@
       .answer {
         overflow: hidden;
         transition: max-height 0.5s ease;
-        padding: 5px 0 0;
+        padding: 5px 8px 0;
         margin: 5px 0 10px;
 
         p {
           font-size: 1.25rem;
-          line-height: 1.75;
+          line-height: 1.5;
           margin-bottom: 10px;
-
-          @include phone {
-            line-height: 1.5;
-          }
         }
 
         a {

@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 const Item = ({ question, children }) => {
   const [active, setActive] = useState(false);
   const answerRef = useRef(null);
+  const questionRef = useRef(null);
 
   useEffect(() => {
     answerRef.current.style.maxHeight = active
@@ -16,8 +17,12 @@ const Item = ({ question, children }) => {
 
   return (
     <div className="item">
-      <div className="question" onClick={toogleActive}>
+      <div className="question" ref={questionRef} onClick={toogleActive}>
         <p>{question}</p>
+        <div className={active ? "toggle active" : "toggle"}>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <div className="answer" ref={answerRef}>
         {children}

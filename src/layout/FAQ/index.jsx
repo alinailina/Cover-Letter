@@ -14,6 +14,12 @@ const FAQ = () => {
       <header>
         <h2>FAQs</h2>
       </header>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          voluptatem maxime quam eius enim.
+        </p>
+      </section>
       <Acc />
       <section className="form">
         <header>
