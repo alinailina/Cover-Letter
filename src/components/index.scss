@@ -101,13 +101,12 @@ nav {
     z-index: 2;
 
     @include phone {
-      top: 35px;
-      left: 20px;
+      top: 30px;
+      left: 25px;
     }
 
     p {
       font-size: 1.5rem;
-      font-family: "Brasley-Regular";
       color: $nude;
       transition: color 1s ease;
     }

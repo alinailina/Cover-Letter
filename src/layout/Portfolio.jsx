@@ -22,7 +22,7 @@ const Portfolio = () => {
             <input type="email" />
           </label>
           <div>
-            <input type="submit" />
+            <input type="submit" value="Submit" />
           </div>
         </form>
 

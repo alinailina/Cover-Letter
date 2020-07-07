@@ -1,6 +1,7 @@
 @import "../../index.scss";
 
 .container {
+  // Hero screen
   .hero {
     @include child-container;
     height: 100vh;
@@ -60,6 +61,7 @@
       align-items: center;
 
       // Leave request
+
       input[type="submit"] {
         width: 200px;
         font-family: $medium;
@@ -87,12 +89,13 @@
       }
 
       // Learn more
-      a {
+      a:last-of-type {
         display: block;
         padding: 25px 0;
         font-family: $medium;
         font-size: 1.5rem;
         color: $black;
+
         &::after {
           content: " \2197";
           position: relative;
@@ -100,6 +103,7 @@
           left: 5px;
           display: inline-block;
         }
+
         &:hover {
           color: $red;
         }
@@ -181,7 +185,7 @@
         }
 
         // Learn more
-        a {
+        a:last-of-type {
           display: block;
           padding: 25px 0;
           font-family: $medium;
@@ -216,6 +220,7 @@
       width: 30%;
       font-size: 3rem;
       margin-bottom: 25px;
+      font-family: $medium;
     }
 
     // Text

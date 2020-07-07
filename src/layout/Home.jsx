@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 // Styles
-
 import css from "./css/Home.module.scss";
 
 const Home = () => {
@@ -25,12 +24,14 @@ const Home = () => {
         </div>
         <div>
           {" "}
-          <input type="submit" value="Leave request" />
-          <a href="/">Learn more</a>
+          <a href="mailto:ai.foreach@gmail.com?subject=App request for Alina Ilina">
+            <input type="submit" value="Leave request" />
+          </a>
+          <AnchorLink href="#hi">Learn more</AnchorLink>
         </div>
       </section>
 
-      <section className={css.intro}>
+      <section className={css.intro} id="hi">
         <h3>Hello,</h3>
         <div>
           <p>
