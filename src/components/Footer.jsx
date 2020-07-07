@@ -7,7 +7,7 @@ const Footer = () => {
       <div>
         <div>
           {" "}
-          <h3>Get in touch</h3>
+          <h3>Drop me a line</h3>
           <p>I'd love to hear from you </p>
         </div>
       </div>
@@ -17,8 +17,8 @@ const Footer = () => {
           <a href="tel:+358465935910">
             <span>T.</span> +358465935910
           </a>
-          <a href="mailto:alinailina.random@gmail.com">
-            <span>E.</span> alinailina.random@gmail.com
+          <a href="mailto:ai.foreach@gmail.com">
+            <span>E.</span> ai.foreach@gmail.com
           </a>{" "}
           <a href="/">
             <span>

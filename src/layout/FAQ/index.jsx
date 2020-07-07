@@ -15,20 +15,15 @@ const FAQ = () => {
         <h2>FAQs</h2>
       </header>
       <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          voluptatem maxime quam eius enim.
-        </p>
+        <p>What's up? Tell me.</p>
       </section>
       <Acc />
       <section className="form">
-        <header>
-          {" "}
-          <h3>Haven't found your answers?</h3>
-          <p>
-            Help me improve this page &mdash; ask away in the form down below!
-          </p>
-        </header>
+        <h3>Ask me anything</h3>
+        <p>
+          Your question not answered yet? Help improve this page &mdash; ask
+          away in the form down below.
+        </p>
         <Form />
       </section>
       <section className="bottom-nav">
