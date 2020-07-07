@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className={css.container}>
       <div>
-        <img src={require("../assets/photos/hello-world.jpg")} alt="portrait" />
+        <img src={require("../assets/keyboard.jpg")} alt="portrait" />
       </div>
       <section>
         <p>
