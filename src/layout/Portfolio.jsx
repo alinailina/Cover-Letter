@@ -15,11 +15,11 @@ const Portfolio = () => {
           I'm working on something very interesting here. Check back in a bit,
           or get notified when it's ready!{" "}
         </p>
-        <form name="get-update" action="POST" data-netlify="true">
+        <form name="get-update" method="POST" data-netlify="true">
           {" "}
           <label>
             Your email:
-            <input type="email" />
+            <input type="email" name="email" required />
           </label>
           <div>
             <input type="submit" value="Submit" />
