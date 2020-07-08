@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+
 // Styles
 import css from "./css/Home.module.scss";
 

@@ -39,21 +39,21 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>/</span>Linkedin
+            Linkedin
           </a>
           <a
             href="https://twitter.com/icode_ergosum"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>/</span>Twitter
+            Twitter
           </a>
           <a
             href="https://github.com/alinailina"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>/</span>Github
+            Github
           </a>
         </div>
         <p>© - ai, 2020.</p>

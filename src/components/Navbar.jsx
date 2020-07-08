@@ -39,21 +39,21 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              /Linkedin
+              Linkedin
             </a>
             <a
               href="https://twitter.com/icode_ergosum"
               target="_blank"
               rel="noopener noreferrer"
             >
-              /Twitter
+              Twitter
             </a>
             <a
               href="https://github.com/alinailina"
               target="_blank"
               rel="noopener noreferrer"
             >
-              /Github
+              Github
             </a>
           </div>
 

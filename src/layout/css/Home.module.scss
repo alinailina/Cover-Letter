@@ -13,7 +13,6 @@
     h1 {
       font-family: $bold;
       font-size: 12rem;
-      //color: $red;
       margin-top: 150px;
     }
 
@@ -33,7 +32,6 @@
 
       a {
         display: block;
-
         color: $black;
         font-size: 2rem;
         line-height: 1.25;
@@ -60,7 +58,6 @@
       align-items: center;
 
       // Leave request
-
       input[type="submit"] {
         width: 200px;
         font-family: $medium;
@@ -219,7 +216,7 @@
       width: 30%;
       font-size: 3rem;
       margin-bottom: 25px;
-      font-family: $medium;
+      font-family: $bold;
     }
 
     // Text
@@ -235,6 +232,7 @@
       }
 
       a {
+        font-family: $medium;
         font-size: 1.5rem;
         color: $black;
         text-decoration: underline;

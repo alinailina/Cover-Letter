@@ -15,9 +15,9 @@ const Portfolio = () => {
           I'm working on something very interesting here. Check back in a bit,
           or get notified when it's ready!{" "}
         </p>
-        <form name="get-update" method="POST" data-netlify="true">
+        <form name="get-update" action="POST" data-netlify="true">
           {" "}
-          <label htmlFor="email">
+          <label>
             Your email:
             <input type="email" />
           </label>
