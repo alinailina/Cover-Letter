@@ -15,7 +15,7 @@ const FAQ = () => {
         <h2>FAQs</h2>
       </header>
       <section>
-        <p>What's up? Tell me.</p>
+        <p>How can I help?</p>
       </section>
       <Acc />
       <section className="form">

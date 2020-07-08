@@ -102,7 +102,7 @@ nav {
 
     @include phone {
       top: 30px;
-      left: 25px;
+      left: 20px;
     }
 
     p {
@@ -372,7 +372,7 @@ aside {
       }
 
       p {
-        font-size: 1rem;
+        display: none;
       }
 
       &:first-child {

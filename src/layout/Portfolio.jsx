@@ -15,7 +15,7 @@ const Portfolio = () => {
           I'm working on something very interesting here. Check back in a bit,
           or get notified when it's ready!{" "}
         </p>
-        <form name="get-update" method="POST">
+        <form name="get-update" method="post">
           <input type="hidden" name="form-name" value="get-update" />{" "}
           <label>
             Your email:
