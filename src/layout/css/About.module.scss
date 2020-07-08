@@ -5,11 +5,40 @@
   > div:first-of-type {
     position: absolute;
     z-index: -1;
+    background-color: $gray;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
-    img {
-      width: 100%;
-      object-fit: cover;
-      height: 50vh;
+    > div {
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 100px;
+
+      p {
+        font-family: $bold;
+        font-size: 6rem;
+        position: relative;
+        //color: $red;
+
+        // Quotation mark
+        &::before {
+          content: "\201C";
+          font-family: Arial, Helvetica, sans-serif;
+          position: absolute;
+          left: -75px;
+          top: -50px;
+          font-size: 200px;
+        }
+      }
+
+      // img {
+      //   width: 100%;
+      //   object-fit: cover;
+      //   height: 50vh;
+      // }
     }
   }
 
@@ -69,14 +98,32 @@
   @include phone {
     // Hero img
     > div:first-of-type {
-      img {
-        height: 30vh;
+      height: 40vh;
+      > div {
+        width: 80%;
+
+        p {
+          font-size: 3.5rem;
+          position: relative;
+          left: 20px;
+          //color: $red;
+
+          // Quotation mark
+          &::before {
+            content: "\201C";
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            left: -45px;
+            top: -25px;
+            font-size: 120px;
+          }
+        }
       }
     }
 
     // Text
     section:first-of-type {
-      padding: 35vh 0 25px;
+      padding: 45vh 0 25px;
     }
   }
 }

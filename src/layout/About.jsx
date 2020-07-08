@@ -8,7 +8,20 @@ const About = () => {
   return (
     <div className={css.container}>
       <div>
-        <img src={require("../assets/keyboard.jpg")} alt="portrait" />
+        {/* <img src={require("../assets/keyboard.jpg")} alt="portrait" /> */}
+        <div>
+          <p>
+            I code,
+            <br />
+            ergo sum.
+          </p>
+
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
       </div>
       <section>
         <p>
