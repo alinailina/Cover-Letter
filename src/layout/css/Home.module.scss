@@ -103,6 +103,7 @@
 
         &:hover {
           color: $red;
+          text-decoration: none;
         }
       }
     }
@@ -110,7 +111,7 @@
     @include phone {
       // Name
       h1 {
-        font-size: 18vw;
+        font-size: 24vw;
         //color: $red;
         margin-top: 150px;
       }
@@ -118,7 +119,7 @@
       // Tagline
       h2 {
         font-family: $semi-bold;
-        font-size: 6vw;
+        font-size: 8vw;
         line-height: 1.25;
         padding: 5px 0 25px;
         span {
@@ -128,7 +129,7 @@
 
       // Contact info
       > div:first-of-type {
-        padding: 10px 0;
+        padding: 0;
 
         a {
           display: block;
