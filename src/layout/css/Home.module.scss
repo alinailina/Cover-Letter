@@ -226,6 +226,7 @@
     }
 
     @include phone {
+      height: auto;
       flex-direction: column;
 
       h3 {
