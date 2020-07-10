@@ -7,22 +7,9 @@ import css from "./css/About.module.scss";
 const About = () => {
   return (
     <div className={css.container}>
-      <div>
-        {/* <img src={require("../assets/keyboard.jpg")} alt="portrait" /> */}
-        <div>
-          <p>
-            I code,
-            <br />
-            ergo sum.
-          </p>
-
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
-      </div>
+      <header>
+        <h2>About</h2>
+      </header>
       <section>
         <p>
           My name is Alina Ilina. I’m a Web Developer and UI Imagineer (a
@@ -38,9 +25,12 @@ const About = () => {
           important to a good narrative than imagination).
         </p>
         <p>
-          I combine my passion for UI design and development to help brands
-          create digital experiences for a long-lasting emotional connection
-          with their audience.
+          <span>
+            {" "}
+            I combine my passion for UI design and development to help brands
+            create digital experiences for a long-lasting emotional connection
+            with their audience.
+          </span>
         </p>
         <p>
           My strong interests in usability, web accessibility and interaction
@@ -53,11 +43,9 @@ const About = () => {
       <section className="bottom-nav">
         <div>
           <Link to="portfolio">My works</Link>
-          <p>(See what I've been up to)</p>
         </div>
         <div>
           <Link to="faq">FAQ</Link>
-          <p>(All you need to know)</p>
         </div>
       </section>
     </div>

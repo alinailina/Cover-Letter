@@ -35,11 +35,9 @@ const Portfolio = () => {
       <section className="bottom-nav">
         <div>
           <Link to="/about">About</Link>
-          <p>(In a nutshell)</p>
         </div>
         <div>
           <Link to="/faq">FAQs</Link>
-          <p>(All you need to know)</p>
         </div>
       </section>
     </div>

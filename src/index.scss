@@ -20,10 +20,10 @@
 // Colors
 
 //$red: rgb(237, 52, 14);
-$red: #ed340e;
+$red: #8338ec;
 // #ED340E
 $black: #323232;
-$nude: #f8f7e8;
+$nude: white;
 $gray: rgba(19, 19, 19, 0.1);
 
 * {
@@ -195,4 +195,33 @@ $bold: "Brasley-Bold";
 @mixin border {
   border: 1px solid red;
   // for dev purposes
+}
+
+@mixin text {
+  font-size: 1.75rem;
+  line-height: 1.5;
+
+  @include phone {
+    font-size: 1.25rem;
+    //border: 1px solid red;
+  }
+
+  @include tablet {
+    font-size: 1.5rem;
+    //border: 1px solid red;
+  }
+}
+
+@mixin header {
+  padding: 200px 0 50px;
+  @include child-container;
+
+  h2 {
+    font-family: $medium;
+    font-size: 3rem;
+
+    @include phone {
+      font-size: 8vw;
+    }
+  }
 }

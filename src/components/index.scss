@@ -14,7 +14,7 @@ nav {
     height: 100%;
     width: 100%;
     transition-property: all;
-    transition-duration: 0.7s;
+    transition-duration: 0.55s;
     transition-delay: 0;
     transition-timing-function: cubic-bezier(0.66, 0, 0.34, 1);
     z-index: 1;
@@ -22,6 +22,7 @@ nav {
     li {
       a {
         color: $nude;
+        font-family: $medium;
         font-size: 3rem;
         text-align: center;
         line-height: 1.5;
@@ -86,36 +87,42 @@ nav {
   }
 
   .logo {
-    width: 55px;
+    //border: 1px solid red;
+    width: 150px;
     height: 55px;
-    background-color: $red;
-    border-radius: 50%;
+
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 55px;
+    top: 65px;
     left: 65px;
     z-index: 2;
 
     @include phone {
-      top: 30px;
-      left: 20px;
+      top: 32.5px;
+      left: 5px;
     }
 
     p {
-      font-family: $medium;
-      font-size: 1.75rem;
-      color: $nude;
+      font-family: $semi-bold;
+      font-size: 2.5rem;
+      color: $black;
       transition: color 1s ease;
       position: relative;
       left: -1px;
       top: 1px;
+      span {
+        color: $red;
+        font-size: 1.25rem;
+        position: relative;
+        left: -1px;
+      }
     }
 
     &.active {
       p {
-        color: $black;
+        color: $nude;
       }
     }
   }
@@ -139,7 +146,7 @@ nav {
 
     .hamburger {
       width: 100%;
-      height: 3px;
+      height: 4px;
       background: $black;
       border-radius: 1px;
       transition: all 0.5s ease;
@@ -151,7 +158,7 @@ nav {
         content: "";
         position: absolute;
         width: 100%;
-        height: 3px;
+        height: 4px;
         background: $black;
         border-radius: 1px;
         transition: 0.5s;
@@ -331,10 +338,9 @@ aside {
 
     a {
       font-family: $medium;
-      font-size: 2.5rem;
+      font-size: 3rem;
       color: $black;
       text-decoration: none;
-      text-decoration: underline;
       outline: none;
       margin-bottom: 10px;
 
@@ -342,12 +348,11 @@ aside {
         content: " \2197";
         position: relative;
         top: -10px;
-        left: 5px;
         display: inline-block;
       }
 
       &:hover {
-        text-decoration: none;
+        text-decoration: underline;
         color: $red;
       }
     }
@@ -370,6 +375,9 @@ aside {
 
       a {
         font-size: 6vw;
+        &::after {
+          top: -8px;
+        }
       }
 
       p {
@@ -384,73 +392,92 @@ aside {
 }
 
 // Footer
-footer {
-  //border: 1px solid red;
-  width: 100%;
-  background-color: $black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 75px 0 25px;
 
-  // CTA
-  > div:first-of-type {
+footer {
+  //height: 100vh;
+  background-color: $black;
+  // @include child-container;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  > div {
+    @include child-container;
+  }
+
+  // Social links
+  section:first-of-type {
     //border: 1px solid red;
-    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    margin-bottom: 25px;
 
-    h3 {
+    a {
       //border: 1px solid red;
-      font-size: 2.5rem;
-      line-height: 1.5;
       color: $nude;
-      //font-family: $medium;
-    }
+      font-family: $medium;
+      font-size: 3rem;
 
-    p {
-      font-size: 1.75rem;
-      color: $nude;
+      @include phone {
+        font-size: 6vw;
+      }
+
+      line-height: 1.5;
+      text-decoration: none;
+
+      &::after {
+        content: " \2197";
+        position: relative;
+        top: -10px;
+        display: inline-block;
+
+        @include phone {
+          top: -8px;
+        }
+      }
+
+      &:hover {
+        text-decoration: underline;
+        color: $red;
+      }
     }
   }
 
   // Contact info
-  > div:nth-of-type(2) {
+  section:nth-of-type(2) {
     //border: 1px solid red;
-    width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 5px;
+    flex-direction: column;
+    margin-bottom: 25px;
 
-    // Inner container
-    > div {
-      display: flex;
-      flex-direction: column;
+    a {
+      @include text;
+      color: $nude;
+      text-decoration: none;
 
-      a {
-        //border: 1px solid red;
-        font-size: 1.75rem;
-        line-height: 1.5;
-        color: $nude;
-        text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
 
-        span {
-          font-family: $medium;
-        }
+      span {
+        color: inherit;
+        font-family: $medium;
 
-        &:hover {
-          text-decoration: underline;
-        }
+        img {
+          width: 25px;
+          position: relative;
+          top: 4px;
+          left: -4px;
 
-        span:last-of-type {
-          img {
-            width: 28px;
-            position: relative;
-            top: 4px;
+          @include tablet {
+            width: 22px;
+          }
+
+          @include phone {
+            width: 20px;
+            top: 3px;
             left: -5px;
           }
         }
@@ -458,108 +485,13 @@ footer {
     }
   }
 
-  // Links
-  > div:nth-of-type(3) {
+  // Copyright
+  section:nth-of-type(3) {
     //border: 1px solid red;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0 10px;
 
-    > div {
-      margin-bottom: 15px;
-
-      a {
-        font-size: 1.25rem;
-        line-height: 1.5;
-        color: $nude;
-        cursor: pointer;
-        text-decoration: none;
-        padding: 10px;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-
-    // Copyright
     p {
+      @include text;
       color: $nude;
-    }
-  }
-
-  @include tablet {
-    // CTA
-    > div:first-of-type {
-      p {
-        font-size: 1.5rem;
-      }
-    }
-    // Contact info
-    > div:nth-of-type(2) {
-      > div {
-        a {
-          font-size: 1.5rem;
-
-          span:last-of-type {
-            img {
-              width: 23px;
-              top: 3px;
-              left: -4px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  @include phone {
-    flex-direction: column;
-
-    //CTA
-    > div:first-of-type {
-      width: 100%;
-      margin-bottom: 25px;
-      text-align: center;
-
-      h3 {
-        font-size: 6vw;
-        margin-bottom: 5px;
-      }
-      p {
-        font-size: 1.25rem;
-      }
-    }
-
-    // Contact info
-    > div:nth-of-type(2) {
-      width: 100%;
-
-      > div {
-        a {
-          font-size: 1.25rem;
-          text-align: center;
-
-          span:last-of-type {
-            img {
-              width: 20px;
-              top: 3px;
-            }
-          }
-        }
-      }
-    }
-
-    // Links
-    > div:nth-of-type(3) {
-      > div {
-        a {
-          font-size: 1rem;
-        }
-      }
     }
   }
 }

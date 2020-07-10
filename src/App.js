@@ -25,7 +25,6 @@ function App() {
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/faq" component={FAQ} />
       </Switch>
-
       <Footer />
     </Router>
   );

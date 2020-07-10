@@ -2,17 +2,7 @@
 
 .container {
   header {
-    padding: 200px 0 50px;
-    @include child-container;
-
-    h2 {
-      font-family: $medium;
-      font-size: 3rem;
-
-      @include phone {
-        font-size: 8vw;
-      }
-    }
+    @include header;
   }
 
   section:first-of-type {
@@ -20,14 +10,14 @@
     @include child-container;
 
     p {
-      font-size: 1.75rem;
-      line-height: 1.5;
+      @include text;
 
       a {
         color: inherit;
         &:hover {
           color: $red;
         }
+
         &::after {
           content: " \2197";
           position: relative;
@@ -37,8 +27,6 @@
       }
 
       @include tablet {
-        font-size: 1.5rem;
-
         a {
           &::after {
             top: -8px;
@@ -47,8 +35,6 @@
       }
 
       @include phone {
-        font-size: 1.25rem;
-
         a {
           &::after {
             top: -6px;

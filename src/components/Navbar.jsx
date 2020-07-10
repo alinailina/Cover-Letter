@@ -13,7 +13,10 @@ const Navbar = () => {
     <nav>
       <a href="/">
         <div className={active ? "logo active" : "logo"}>
-          <p>ai</p>
+          <p>
+            ai
+            <span>.foreach</span>
+          </p>
         </div>
       </a>
       <div

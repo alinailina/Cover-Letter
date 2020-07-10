@@ -29,11 +29,9 @@ const FAQ = () => {
       <section className="bottom-nav">
         <div>
           <Link to="about">About</Link>
-          <p>(In a nutshell)</p>
         </div>
         <div>
           <Link to="portfolio">My works</Link>
-          <p>(See what I've been up to)</p>
         </div>
       </section>
     </div>
