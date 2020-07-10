@@ -102,7 +102,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 65px;
     left: 65px;
     z-index: 2;
@@ -139,7 +139,7 @@ nav {
     width: 50px;
     height: 50px;
     display: block;
-    position: absolute;
+    position: fixed;
     right: 50px;
     top: 50px;
 
@@ -406,6 +406,10 @@ footer {
   background-color: $black;
   // @include child-container;
   padding: 100px 0;
+
+  @include phone {
+    padding: 50px 0;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
