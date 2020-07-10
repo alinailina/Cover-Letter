@@ -151,8 +151,7 @@
     > div {
       width: 70%;
       p {
-        font-size: 1.75rem;
-        line-height: 1.5;
+        @include text;
         margin-bottom: 25px;
         span {
           font-family: $medium;
@@ -162,18 +161,27 @@
 
       a {
         //font-family: $medium;
-        font-size: 1.5rem;
+        @include text;
         color: $black;
         text-decoration: underline;
         outline: none;
         cursor: pointer;
 
         &::after {
-          content: " \2197";
+          content: "\2197";
           position: relative;
-          top: -10px;
-          left: 5px;
+          top: -12px;
+          left: 2px;
           display: inline-block;
+          z-index: -1;
+
+          @include tablet {
+            top: -10px;
+          }
+
+          @include phone {
+            top: -8px;
+          }
         }
 
         &:hover {
@@ -183,16 +191,9 @@
       }
     }
 
-    @include tablet {
-      > div {
-        p {
-          font-size: 1.5rem;
-        }
-      }
-    }
-
     @include phone {
       height: auto;
+
       flex-direction: column;
 
       h3 {
@@ -201,14 +202,6 @@
 
       > div {
         width: 100%;
-
-        p {
-          font-size: 1.25rem;
-        }
-
-        a {
-          font-size: 1.25rem;
-        }
       }
     }
   }

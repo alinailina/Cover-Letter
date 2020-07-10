@@ -42,29 +42,19 @@
         }
 
         &::after {
-          content: " \2197";
+          content: "\2197";
           position: relative;
-          top: -10px;
+          top: -12px;
+          left: 2px;
           display: inline-block;
-        }
-      }
-    }
+          z-index: -1;
 
-    @include tablet {
-      p {
-        a {
-          &::after {
-            top: -8px;
+          @include tablet {
+            top: -10px;
           }
-        }
-      }
-    }
 
-    @include phone {
-      p {
-        a {
-          &::after {
-            top: -6px;
+          @include phone {
+            top: -8px;
           }
         }
       }

@@ -44,11 +44,9 @@ const Home = () => {
       <section className="bottom-nav">
         <div>
           <Link to="/portfolio">My works</Link>
-          <p>(See what I've been up to)</p>
         </div>
         <div>
           <Link to="/faq">FAQs</Link>
-          <p>(All you need to know)</p>
         </div>
       </section>
     </div>
