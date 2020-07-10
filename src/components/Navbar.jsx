@@ -60,7 +60,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <p>© - a &mdash; i, 2020.</p>
+          <p>© - ai.foreach, 2020.</p>
         </li>
       </ul>
     </nav>
