@@ -398,28 +398,37 @@ aside {
 
 footer {
   background-color: $black;
-  padding: 50px 0;
+  padding: 25px 0;
 
   @include desktop {
-    padding: 100px 0 50px;
+    padding: 50px 0 25px;
   }
 
   > div {
     @include child-container;
+
+    > div:first-of-type {
+      p {
+        @include heading;
+        text-align: left;
+        padding: 25px 0;
+      }
+    }
 
     // Social links
     section:first-of-type {
       //border: 1px solid red;
       display: flex;
       flex-direction: column;
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       @include desktop {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
       }
 
       a {
         //@include border;
-        @include heading;
+        @include text;
+        font-family: $medium;
         color: $nude;
         text-decoration: none;
 
@@ -458,7 +467,8 @@ footer {
       }
 
       a {
-        @include heading;
+        @include text;
+        font-family: $medium;
         color: $nude;
         text-decoration: none;
 
@@ -496,7 +506,11 @@ footer {
   // Copyright
   p {
     // @include border;
-    @include text;
+    font-size: 1rem;
+
+    @include desktop {
+      font-size: 1.5rem;
+    }
     color: $nude;
     text-align: center;
   }

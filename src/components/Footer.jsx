@@ -4,6 +4,9 @@ const Footer = () => {
   return (
     <footer>
       <div>
+        <div>
+          <p>Get in touch</p>
+        </div>
         <section>
           <a
             href="https://www.linkedin.com/in/alinailina/"
