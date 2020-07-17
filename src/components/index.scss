@@ -48,11 +48,13 @@ nav {
         bottom: 0;
 
         p {
-          @include text;
+          font-size: 1rem;
           font-family: $medium;
-          padding: 25px 0 50px;
+          padding: 25px 0 25px;
+
           @include desktop {
-            padding: 50px 0;
+            font-size: 1.5vw;
+            padding: 25px 0;
           }
         }
       }
@@ -101,8 +103,9 @@ nav {
 
     @include phone {
       top: 32.5px;
-      left: 5px;
+      left: -10px;
     }
+
     @include desktop {
       top: 65px;
       left: 45px;
@@ -399,7 +402,6 @@ aside {
 footer {
   background-color: $black;
   padding: 25px 0;
-
   @include desktop {
     padding: 50px 0 25px;
   }
@@ -411,6 +413,9 @@ footer {
       p {
         @include heading;
         text-align: left;
+        @include phone {
+          text-align: center;
+        }
         padding: 25px 0;
       }
     }
@@ -507,10 +512,12 @@ footer {
   p {
     // @include border;
     font-size: 1rem;
+    font-family: $medium;
 
     @include desktop {
-      font-size: 1.5rem;
+      font-size: 1.5vw;
     }
+
     color: $nude;
     text-align: center;
   }
