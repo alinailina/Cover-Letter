@@ -36,30 +36,6 @@ const Navbar = () => {
           <a href="/faq">FAQ</a>
         </li>
         <li>
-          <div>
-            <a
-              href="https://www.linkedin.com/in/alinailina/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Linkedin
-            </a>
-            <a
-              href="https://twitter.com/icode_ergosum"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter
-            </a>
-            <a
-              href="https://github.com/alinailina"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
-          </div>
-
           <p>© - ai.foreach, 2020.</p>
         </li>
       </ul>

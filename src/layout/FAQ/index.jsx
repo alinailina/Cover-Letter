@@ -21,7 +21,7 @@ const FAQ = () => {
       <section className="form">
         <h3>Ask me anything</h3>
         <p>
-          Your question not answered yet? Help improve this page &mdash; ask
+          Your question not answered yet? Help me improve this page &mdash; ask
           away in the form down below.
         </p>
         <Form />

@@ -8,23 +8,29 @@ import css from "./css/Home.module.scss";
 const Home = () => {
   return (
     <div className={css.container}>
-      <section className={css.hero}>
-        <h1>
-          ai
-          <span>.foreach</span>
-        </h1>
-        <h2>
-          {" "}
-          Web and mobile apps <br />
-          with a touch of <span>awe(some)</span>
-        </h2>
+      <div>
+        <img src={require("../assets/duck.png")} alt="" />
+      </div>
 
+      <section className={css.hero}>
         <div>
-          {" "}
-          <a href="mailto:ai.foreach@gmail.com?subject=App request for Alina Ilina">
-            <input type="submit" value="Request app" />
-          </a>
-          <AnchorLink href="#hi">Learn more</AnchorLink>
+          <h1>
+            ai
+            <span>.foreach</span>
+          </h1>
+          <h2>
+            {" "}
+            Web and mobile apps <br />
+            with a touch of <span>awe(some)</span>
+          </h2>
+
+          <div>
+            {" "}
+            <a href="mailto:ai.foreach@gmail.com?subject=App request for Alina Ilina">
+              <input type="submit" value="Request app" />
+            </a>
+            <AnchorLink href="#hi">Learn more</AnchorLink>
+          </div>
         </div>
       </section>
 
@@ -38,6 +44,40 @@ const Home = () => {
             mobile apps that meet high standards for usability, and scale.
           </p>
           <a href="/about">Read full story</a>
+        </div>
+      </section>
+
+      <section className={css.icons}>
+        <div>
+          <h3>What I do</h3>
+          <div>
+            <div>
+              {" "}
+              <div>
+                {" "}
+                <img
+                  src={require("../assets/desktop.png")}
+                  alt="desktop-screen"
+                />
+              </div>
+              <p>Web development</p>
+            </div>
+            <div>
+              {" "}
+              <div>
+                <img src={require("../assets/mobile.png")} alt="mobile-app" />
+              </div>
+              <p>Mobile app development</p>
+            </div>
+            <div>
+              {" "}
+              <div>
+                {" "}
+                <img src={require("../assets/ui.png")} alt="ui-design" />
+              </div>
+              <p>User interface design</p>
+            </div>
+          </div>
         </div>
       </section>
 

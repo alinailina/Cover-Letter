@@ -1,128 +1,166 @@
 @import "../../index.scss";
 
 .container {
+  // Hero img
+  > div:first-of-type {
+    //border: 1px solid red;
+    position: absolute;
+    z-index: -10;
+    bottom: 0;
+    img {
+      width: 100%;
+    }
+  }
+
   // Hero screen
   .hero {
-    @include child-container;
     height: 100vh;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
-    // Name
-    h1 {
-      //@include border;
-      font-family: $semi-bold;
-      font-size: 18rem;
-      margin-top: 150px;
-
-      span {
-        font-size: 6rem;
-        color: $red;
-        position: relative;
-        left: -10px;
-        z-index: -1;
-      }
-    }
-
-    // Tagline
-    h2 {
-      //font-family: $medium;
-      font-size: 2.5rem;
-      line-height: 1.5;
-      padding: 0 0 25px;
-
-      span {
-        color: $red;
-      }
-    }
-
-    // CTA
     > div {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      justify-content: center;
 
-      // Leave request
-      input[type="submit"] {
-        width: 225px;
-        font-family: $medium;
-        font-size: 1.75rem;
-        padding: 10px 0;
-        border: 2px solid $black;
-        border-radius: 2px;
-        color: $black;
-        background-color: $nude;
-        cursor: pointer;
-        -webkit-appearance: none;
-        margin-right: 25px;
+      // Name
+      h1 {
+        //@include border;
+        font-family: $semi-bold;
+        font-size: 15vw;
+        margin-top: 150px;
 
-        &:hover,
-        &:active {
-          border: 2px solid $black;
-          color: $nude;
-          background-color: $black;
-          outline: none;
-        }
-
-        @include phone {
-          font-size: 1.5rem;
-        }
-      }
-
-      // Learn more
-      a:last-of-type {
-        display: block;
-        padding: 25px 0;
-        font-family: $medium;
-        font-size: 1.75rem;
-        color: $black;
-
-        &::after {
-          content: " \2197";
+        span {
+          font-size: 5vw;
+          color: $red;
           position: relative;
-          top: -10px;
-          display: inline-block;
+          left: -5px;
           z-index: -1;
         }
 
-        &:hover {
-          color: $red;
-          text-decoration: none;
-        }
-      }
-    }
-
-    @include phone {
-      // Name
-      h1 {
-        font-size: 24vw;
-
-        span {
-          font-size: 8vw;
-          left: -2px;
+        @include tablet {
+          font-size: 17vw;
+          span {
+            font-size: 5.5vw;
+          }
         }
       }
 
       // Tagline
       h2 {
-        font-family: $medium;
-        font-size: 6vw;
-        line-height: 1.25;
-        padding: 0 0 10px;
+        font-size: 3vw;
+        @include tablet {
+          font-size: 2.5vw;
+        }
+
+        line-height: 1.5;
+        padding: 0 0 25px;
+
+        span {
+          color: $red;
+        }
       }
 
       // CTA
-      > div:last-of-type {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 25px 0;
+      > div {
+        display: flex;
+        align-items: center;
+
+        // Leave request
+        input[type="submit"] {
+          width: 225px;
+          font-family: $medium;
+          font-size: 1.5rem;
+          padding: 10px 0;
+          border: 2px solid $black;
+          margin-right: 25px;
+
+          @include desktop {
+            width: 15vw;
+            min-width: 250px;
+            font-size: 2vw;
+          }
+
+          border-radius: 2px;
+          color: $black;
+          background-color: $nude;
+          cursor: pointer;
+          -webkit-appearance: none;
+
+          &:hover,
+          &:active {
+            border: 2px solid $black;
+            color: $nude;
+            background-color: $black;
+            outline: none;
+          }
+
+          @include phone {
+            font-size: 1.5rem;
+          }
+        }
 
         // Learn more
         a:last-of-type {
+          display: block;
+          padding: 25px 0;
+          font-family: $medium;
           font-size: 1.5rem;
 
+          @include desktop {
+            font-size: 2vw;
+          }
+          color: $black;
+
           &::after {
-            top: -8px;
+            content: " \2197";
+            position: relative;
+            top: -10px;
+            display: inline-block;
+            z-index: -1;
+          }
+
+          &:hover {
+            color: $red;
+            text-decoration: none;
+          }
+        }
+      }
+
+      @include phone {
+        margin-top: 50px;
+        // Name
+        h1 {
+          font-size: 24vw;
+          span {
+            font-size: 8vw;
+            left: -5px;
+          }
+        }
+
+        // Tagline
+        h2 {
+          font-family: $medium;
+          font-size: 6vw;
+          line-height: 1.25;
+          padding: 0 0 10px;
+        }
+
+        // CTA
+        > div:last-of-type {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 25px 0;
+
+          // Learn more
+          a:last-of-type {
+            font-size: 1.5rem;
+
+            &::after {
+              top: -8px;
+            }
           }
         }
       }
@@ -132,19 +170,16 @@
   // Intro text
   .intro {
     // @include border;
-    height: calc(100vh - 375px);
-    padding: 150px 0 50px;
     @include child-container;
+    padding: 200px 0 100px;
     display: flex;
 
     // Hello
     h3 {
-      //border: 1px solid red;
+      // @include border;
       display: block;
       width: 30%;
-      font-size: 3.25rem;
-      margin-bottom: 25px;
-      font-family: $medium;
+      @include heading;
     }
 
     // Text
@@ -153,6 +188,9 @@
       p {
         @include text;
         margin-bottom: 25px;
+        @include desktop {
+          margin-bottom: 50px;
+        }
         span {
           font-family: $medium;
           color: $red;
@@ -160,7 +198,6 @@
       }
 
       a {
-        //font-family: $medium;
         @include text;
         color: $black;
         text-decoration: underline;
@@ -192,16 +229,98 @@
     }
 
     @include phone {
-      height: auto;
-
+      padding: 200px 0 50px;
       flex-direction: column;
 
       h3 {
-        font-size: 8vw;
+        margin-bottom: 25px;
+      }
+      > div {
+        width: 100%;
+      }
+    }
+  }
+
+  .icons {
+    > div {
+      //@include border;
+      padding: 100px 0;
+      width: 80%;
+
+      @include phone {
+        padding: 25px 0;
+        width: 90%;
+      }
+
+      @include desktop {
+        padding: 4vw 0;
+        width: 70%;
+      }
+
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        @include heading;
+        padding: 0 0 50px;
+
+        @include phone {
+          padding: 0 0 25px;
+        }
       }
 
       > div {
-        width: 100%;
+        //@include border;
+        display: flex;
+        justify-content: space-between;
+
+        > div {
+          width: 30%;
+
+          @include desktop {
+            width: 25%;
+          }
+
+          p {
+            @include text;
+            padding: 25px 0;
+            text-align: center;
+            max-width: 7em;
+            margin: 0 auto;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+
+        @include phone {
+          flex-direction: column;
+          align-items: center;
+
+          > div {
+            width: 100%;
+            margin-bottom: 25px;
+            > div {
+              width: 40%;
+              margin: 0 auto;
+            }
+
+            p {
+              padding: 0;
+              max-width: 20em;
+            }
+
+            &:nth-of-type(2) {
+              p {
+                position: relative;
+                top: -10px;
+              }
+            }
+          }
+        }
       }
     }
   }

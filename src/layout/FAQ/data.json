@@ -1,18 +1,24 @@
 [
   {
     "id": 1,
-    "question": "I want to build a website/mobile app (freelance), can you help?",
-    "answer": "<p>Sure thing! I’m available as an individual UI designer and developer for small-scale projects. I can help you revamp your current interface (improve usability, optimize for mobile screens, etc.), or build your website or app from scratch, i.e.:</p><ul><li>&mdash; Complete your user research</li><li>&mdash; Run content audit</li><li>&mdash; Create wireframes and navigation flowcharts</li><li>&mdash; Make UI mockups based on your desired colour and typography schemes, as well as accepted usability principles </li><li>&mdash; Depending on the type of app, your timeline and resources, I can make a high-fidelity interactive prototype using tools like <a href=\"https://www.figma.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Figma</a> and  <a href=\"https://www.adobe.com/products/xd.html\" target=\"_blank\" rel=\"noopener noreferrer\">Adobe XD</a> and test it with potential users </li><li>&mdash; And finally, build your application using my portfolio technologies! </li></ul>"
+    "question": "I want to build a website/mobile app, can you help?",
+    "answer": "<p>Sure thing! I’m available as an individual UI designer and developer for small-scale projects. I can help you revamp your current interface (improve usability, optimize for mobile screens, etc.), or build your website or app from scratch, i.e.:</p><ul><li>&mdash; Complete user research</li><li>&mdash; Run content audit</li><li>&mdash; Create wireframes and navigation flowcharts</li><li>&mdash; Make UI mockups based on your desired colour and typography schemes, as well as accepted usability principles </li><li>&mdash; Depending on the type of app, your timeline and resources, I can make a high-fidelity interactive prototype using tools like <a href=\"https://www.figma.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Figma</a> and  <a href=\"https://www.adobe.com/products/xd.html\" target=\"_blank\" rel=\"noopener noreferrer\">Adobe XD</a> and test it with potential users </li><li>&mdash; And finally, build your application using my portfolio technologies! </li></ul><p><a href=\"mailto:ai.foreach@gmail.com\">Get in touch</a> to discuss your app requirements in more detail!</p>"
   },
   {
     "id": 2,
-    "question": "I want to add to my (in-house) engineering team, are you a good fit?",
-    "answer": "<p>Answer is missing.</p>"
+    "question": "I want to add to my developer team, are you a good fit?",
+    "answer": "<p>As a self-starter, I have a great appetite for improving my skills. I’m comfortable picking up new technologies and know how to find answers quickly. I work well in cross-functional teams and enjoy overseeing product development from different angles at every stage of the cycle.</p><p>I will thrive in a team of developers who are just a tad more experienced than me and have the bandwidth to mentor a junior engineer. My optimal tasks will require great detail and meticulous care for end-user experience and clean, organised code, e.g.:</p><p>Sounds fair? <a href=“mailto:ai.foreach@gmail.com”>Get in touch</a>, let’s discuss ways I can be valuable for your company today!</p>"
   },
   {
     "id": 3,
     "question": "What technologies do you use?",
-    "answer": "<p>Here’s a list of tools and technologies that power my applications:</p><ul><li>&mdash; React.js<li>&mdash; Vanilla Javascript</li><li>&mdash; Node.js</li><li>&mdash; Axios</li><li>&mdash; Interfacing with REST API</li><li>&mdash; WordPress (as a headless CMS)</li><li>&mdash; Git version control</li><li>&mdash; iOS ecosystem</li><li>&mdash; Figma (design & prototyping)</li><li>&mdash; Material UI</li><li>&mdash; Bootstrap</li><li>&mdash; CSS/SASS</li><li>&mdash; HTML5</li></ul><p> Can’t find the desired technology on the list? <a href=“mailto:alinailina.random@gmail.com”>Drop a message</a>, let’s see if I can learn something new for your project!</p>"
+    "answer": "<p>Here’s a list of tools and technologies that power my applications:</p><ul><li>&mdash; React.js<li>&mdash; Vanilla Javascript</li><li>&mdash; Node.js</li><li>&mdash; Axios</li><li>&mdash; Interfacing with REST API</li><li>&mdash; WordPress (as a headless CMS)</li><li>&mdash; Git version control</li><li>&mdash; iOS ecosystem</li><li>&mdash; Figma (design & prototyping)</li><li>&mdash; Material UI</li><li>&mdash; Bootstrap</li><li>&mdash; CSS/SASS</li><li>&mdash; HTML5</li></ul><p> Can’t find the desired technology on the list? <a href=“mailto:ai.foreach@gmail.com”>Drop a message</a>, let’s see if I can learn something new for your project!</p>"
+  },
+
+  {
+    "id": 4,
+    "question": "How experienced are you?",
+    "answer": "<p>Answer is missing.</p>"
   },
 
   {
@@ -21,8 +27,13 @@
     "answer": "<p>I believe in the power of honest communication, trust, transparency, and short feedback cycle. I like to take ownership of my work and have a personal impact on products I’m developing.</p><p>I’m attracted to organizations with a strong learning culture and work ethics, that offer a career destination and an opportunity to make a meaningful difference in the lives of their clients.</p>"
   },
   {
-    "id": 5,
+    "id": 6,
     "question": "What is your Superpower?",
-    "answer": "<p>I’m a neat freak. I have a passion for highly polished things and like to do everything well. In developer terms, that means consistent design, no unintentional asymmetry, spaghetti code, or technical debt. \"Detail-oriented\" is not just another word I put on my resume - it’s my brand. I like to complete my work conscientiously - with a touch of awe(some).</p>"
+    "answer": "<p>I’m a neat freak. I have a passion for highly polished things and like to do everything well. In developer terms, that means consistent design, no unintentional asymmetry, spaghetti code, or technical debt. \"Detail-oriented\" is not just another word I put on my resume - it’s my brand. I like to complete my work conscientiously - <span>with a touch of awe(some).</span></p>"
+  },
+  {
+    "id": 7,
+    "question": "I want to learn how to code. Where do I start?",
+    "answer": "<p>Coding is one of the most rewarding careers you can pursue in the modern world. The best part about it is that you don’t need a computer science degree for a vast number of coding jobs. It may feel a little confusing at the start, but given some time and determination very soon you can get the hang of it.</p><p>Whether you are looking to switch careers or add to your existing skillset, I’ll be happy to share my learning path with you, and recommend the best resources out there to help you jump-start your coding journey.</p><p>Get in touch via <a href=\"mailto:ai.foreach@gmail.com\">email</a> or <a href=\"https://www.linkedin.com/in/alinailina/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a> and let’s talk!<p>"
   }
 ]

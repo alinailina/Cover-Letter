@@ -7,7 +7,9 @@ import css from "./css/About.module.scss";
 const About = () => {
   return (
     <div className={css.container}>
-      <div></div>
+      <header>
+        <h2>About</h2>
+      </header>
       <section>
         <p>
           My name is Alina Ilina. I’m a Web Developer and UI Imagineer (a

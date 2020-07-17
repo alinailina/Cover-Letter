@@ -31,24 +31,14 @@ const Footer = () => {
           <a href="tel:+358465935910">
             <span>T.</span> +358465935910
           </a>
-          <a href="mailto:alinailina.random@gmail.com">
+          <a href="mailto:ai.foreach@gmail.com">
             <span>E.</span> ai.foreach@gmail.com
-          </a>{" "}
-          <a href="/">
-            <span>
-              <img
-                src={require("../assets/download.png")}
-                alt="download-icon"
-              />
-            </span>{" "}
-            Download CV
           </a>
-        </section>
-
-        <section>
-          <p>© - ai.foreach, 2020.</p>
+          <a href="/">CV</a>
         </section>
       </div>
+
+      <p>© - ai.foreach, 2020.</p>
     </footer>
   );
 };

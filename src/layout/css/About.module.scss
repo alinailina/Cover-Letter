@@ -1,31 +1,15 @@
 @import "../../index.scss";
 
 .container {
-  // Img
-  > div {
-    margin-top: 160px;
-    height: 50vh;
-    background-color: $red;
-    img {
-      height: 50vh;
-      width: 100%;
-      object-fit: cover;
-    }
-
-    @include phone {
-      margin-top: 110px;
-    }
-  }
-
-  //Header
+  // Header
   header {
-    @include header;
+    @include page-header;
   }
 
   // Text
   section:first-of-type {
     @include child-container;
-    padding: 50px 0;
+    padding: 0 0 50px;
 
     p {
       @include text;
@@ -58,6 +42,10 @@
           }
         }
       }
+    }
+
+    @include phone {
+      padding: 50px 0 25px;
     }
   }
 }

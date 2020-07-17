@@ -3,7 +3,7 @@
 .faq {
   // Header
   header {
-    @include header;
+    @include page-header;
   }
 
   // Intro text
@@ -91,28 +91,54 @@
       // Answer
       .answer {
         overflow: hidden;
-        transition: max-height 0.5s ease;
-        padding: 5px 8px 0;
-        margin: 5px 0 10px;
+        transition: all 0.5s ease;
 
         p {
           font-size: 1.25rem;
           line-height: 1.5;
-          margin-bottom: 10px;
+          padding: 15px 0;
+
+          span {
+            color: $red;
+            font-family: $medium;
+          }
         }
 
         a {
-          color: $black;
+          font-size: inherit;
+          color: inherit;
+          transition: all 0.25s ease;
+
           &:hover {
+            text-decoration: none;
             color: $red;
+          }
+
+          &::after {
+            content: "\2197";
+            position: relative;
+            top: -12px;
+            left: 2px;
+            display: inline-block;
+            z-index: -1;
+
+            @include tablet {
+              top: -10px;
+            }
+
+            @include phone {
+              top: -8px;
+            }
           }
         }
 
         ul {
-          margin-bottom: 10px;
+          list-style: none;
+          padding: 0;
+          // margin-bottom: 10px;
           li {
             font-size: 1.25rem;
-            line-height: 1.75;
+            line-height: 1.5;
           }
         }
       }
@@ -126,25 +152,12 @@
     padding: 100px 0 0;
 
     h3 {
-      font-size: 3rem;
+      @include heading;
       margin-bottom: 25px;
-
-      @include phone {
-        font-size: 8vw;
-      }
     }
 
     p {
-      font-size: 1.75rem;
-      line-height: 1.5;
-
-      @include tablet {
-        font-size: 1.5rem;
-      }
-
-      @include phone {
-        font-size: 1.25rem;
-      }
+      @include text;
     }
 
     form {
@@ -175,15 +188,24 @@
         flex-direction: column;
         font-size: 1.25rem;
         margin: 25px 0;
+        @include desktop {
+          font-size: 1.5vw;
+          margin: 35px 0;
+        }
+
         input,
         textarea {
           border: none;
-          border-bottom: 2px solid $black;
-          background-color: inherit;
-          outline: none;
-          font-family: $regular;
           font-size: 1.5rem;
           padding: 10px 2px;
+          border-bottom: 2px solid $black;
+
+          @include desktop {
+            font-size: 2vw;
+          }
+
+          background-color: inherit;
+          outline: none;
           -webkit-appearance: none;
           border-radius: 0;
         }
@@ -193,6 +215,9 @@
           resize: none;
           &:focus {
             height: 200px;
+            @include desktop {
+              height: 300px;
+            }
           }
         }
       }
@@ -200,15 +225,25 @@
       > div:last-of-type {
         width: 100%;
         margin: 15px 0;
+        @include desktop {
+          margin: 20px 0;
+        }
 
         input[type="submit"] {
           width: 225px;
+          font-family: $medium;
           font-size: 1.5rem;
-          padding: 8px 0;
+          padding: 10px 0;
           border: 2px solid $black;
+
+          @include desktop {
+            width: 15vw;
+            min-width: 250px;
+            font-size: 2vw;
+          }
+
           border-radius: 2px;
           color: $black;
-          font-family: $medium;
           background-color: $nude;
           cursor: pointer;
           -webkit-appearance: none;
@@ -218,6 +253,7 @@
             border: 2px solid $black;
             color: $nude;
             background-color: $black;
+            outline: none;
           }
 
           @include phone {

@@ -3,7 +3,7 @@
 // Navbar
 nav {
   ul {
-    background-color: $black;
+    background-color: $yellow;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -21,15 +21,19 @@ nav {
 
     li {
       a {
-        color: $nude;
         font-family: $medium;
         font-size: 3rem;
-        text-align: center;
         line-height: 1.5;
+        color: $black;
+        text-align: center;
         text-decoration: none;
 
         @include phone {
           font-size: 8vw;
+        }
+
+        @include desktop {
+          font-size: 4vw;
         }
 
         outline: none;
@@ -39,53 +43,17 @@ nav {
         }
       }
 
-      // Social links
       &:last-of-type {
         position: absolute;
         bottom: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        > div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          font-family: $regular;
-          @include text;
-          cursor: pointer;
-          &:hover {
-            color: $red;
-          }
-
-          &::after {
-            content: " \2197";
-            position: relative;
-            top: -10px;
-            display: inline-block;
-
-            @include tablet {
-              top: -8px;
-            }
-            @include phone {
-              top: -6px;
-            }
-          }
-        }
-
-        a {
-          padding: 15px;
-        }
 
         p {
-          font-family: $regular;
-          color: $nude;
-          padding: 0 0 25px;
           @include text;
+          font-family: $medium;
+          padding: 25px 0 50px;
+          @include desktop {
+            padding: 50px 0;
+          }
         }
       }
     }
@@ -103,41 +71,53 @@ nav {
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 65px;
+    top: 60px;
     left: 35px;
     z-index: 2;
 
-    @include phone {
-      top: 32.5px;
-      left: 5px;
-    }
-
     p {
       font-family: $semi-bold;
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       color: $black;
       transition: color 1s ease;
       position: relative;
       left: -1px;
       top: 1px;
+
       span {
         color: $red;
-        font-size: 1.25rem;
+        font-size: 1rem;
         position: relative;
         left: -1px;
       }
+
+      @include desktop {
+        font-size: 2rem;
+        span {
+          font-size: 1.25rem;
+        }
+      }
     }
 
-    &.active {
-      p {
-        color: $nude;
-      }
+    @include phone {
+      top: 32.5px;
+      left: 5px;
+    }
+    @include desktop {
+      top: 65px;
+      left: 45px;
     }
   }
 
   .toggle {
     width: 50px;
     height: 50px;
+
+    @include desktop {
+      width: 4vw;
+      height: 4vw;
+    }
+
     display: block;
     position: fixed;
     right: 50px;
@@ -154,9 +134,9 @@ nav {
 
     .hamburger {
       width: 100%;
-      height: 4px;
+      height: 3px;
+      border-radius: 10px;
       background: $black;
-      border-radius: 1px;
       transition: all 0.5s ease;
       position: relative;
       top: 25px;
@@ -166,18 +146,24 @@ nav {
         content: "";
         position: absolute;
         width: 100%;
-        height: 4px;
+        height: 3px;
         background: $black;
-        border-radius: 1px;
+        border-radius: 10px;
         transition: 0.5s;
       }
 
       &:before {
-        top: -16px;
+        top: -12px;
+        @include desktop {
+          top: -15px;
+        }
       }
 
       &:after {
-        top: 16px;
+        top: 12px;
+        @include desktop {
+          top: 15px;
+        }
       }
     }
 
@@ -189,13 +175,11 @@ nav {
         &:before {
           top: 0;
           transform: rotate(45deg);
-          background: $nude;
         }
 
         &:after {
           top: 0;
           transform: rotate(135deg);
-          background: $nude;
         }
       }
     }
@@ -338,7 +322,7 @@ aside {
   > div {
     //border: 1px solid red;
     width: 50%;
-    height: 225px;
+    height: 15vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -346,7 +330,7 @@ aside {
 
     a {
       font-family: $medium;
-      font-size: 3rem;
+      font-size: 2.5rem;
       color: $black;
       text-decoration: none;
       outline: none;
@@ -381,14 +365,30 @@ aside {
     margin: 25px auto 50px;
 
     > div {
-      height: 100px;
+      height: 25vw;
 
       a {
-        font-size: 2rem;
+        font-size: 6vw;
       }
 
       &:first-child {
         border-right: 2px solid $black;
+      }
+    }
+  }
+
+  @include desktop {
+    margin: 75px auto 125px;
+
+    > div {
+      height: 10vw;
+
+      a {
+        font-size: 3vw;
+      }
+
+      &:first-of-type {
+        border-right: 4px solid $black;
       }
     }
   }
@@ -397,98 +397,96 @@ aside {
 // Footer
 
 footer {
-  //height: 100vh;
   background-color: $black;
-  // @include child-container;
-  padding: 100px 0;
+  padding: 50px 0;
 
-  @include phone {
-    padding: 50px 0;
+  @include desktop {
+    padding: 100px 0 50px;
   }
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
   > div {
     @include child-container;
-  }
 
-  // Social links
-  section:first-of-type {
-    //border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 25px;
-
-    a {
+    // Social links
+    section:first-of-type {
       //border: 1px solid red;
-      color: $nude;
-      font-family: $medium;
-      font-size: 3rem;
-
-      @include phone {
-        font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+      @include desktop {
+        margin-bottom: 50px;
       }
 
-      line-height: 1.5;
-      text-decoration: none;
+      a {
+        //@include border;
+        @include heading;
+        color: $nude;
+        text-decoration: none;
 
-      &::after {
-        content: " \2197";
-        position: relative;
-        top: -14px;
-        left: 6px;
-        display: inline-block;
-
-        @include phone {
-          top: -10px;
-          left: 4px;
-        }
-      }
-
-      &:hover {
-        //text-decoration: underline;
-        color: $red;
-      }
-    }
-  }
-
-  // Contact info
-  section:nth-of-type(2) {
-    //border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-
-    a {
-      @include text;
-      color: $nude;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-
-      span {
-        color: inherit;
-        font-family: $medium;
-
-        img {
-          width: 25px;
+        &::after {
+          content: " \2197";
           position: relative;
-          top: 4px;
-          left: -4px;
-
-          @include tablet {
-            width: 22px;
-          }
+          top: -14px;
+          left: 6px;
+          display: inline-block;
 
           @include phone {
-            width: 20px;
-            top: 3px;
-            left: -5px;
+            top: -10px;
+            left: 4px;
+          }
+
+          @include desktop {
+            top: -16px;
+            left: 8px;
+          }
+        }
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+
+    // Contact info
+    section:nth-of-type(2) {
+      //border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+      @include desktop {
+        margin-bottom: 50px;
+      }
+
+      a {
+        @include heading;
+        color: $nude;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:last-of-type {
+          &:hover {
+            color: $red;
+          }
+
+          &::after {
+            content: " \2197";
+            position: relative;
+            top: -14px;
+            left: 6px;
+            display: inline-block;
+
+            @include phone {
+              top: -10px;
+              left: 4px;
+            }
+
+            @include desktop {
+              top: -16px;
+              left: 8px;
+            }
           }
         }
       }
@@ -496,12 +494,10 @@ footer {
   }
 
   // Copyright
-  section:nth-of-type(3) {
-    //border: 1px solid red;
-
-    p {
-      @include text;
-      color: $nude;
-    }
+  p {
+    // @include border;
+    @include text;
+    color: $nude;
+    text-align: center;
   }
 }

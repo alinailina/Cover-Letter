@@ -8,8 +8,16 @@ const Item = ({ question, children }) => {
   useEffect(() => {
     answerRef.current.style.maxHeight = active
       ? `${answerRef.current.scrollHeight}px`
-      : "0px";
-  }, [answerRef, active]);
+      : "10px";
+    answerRef.current.style.padding = active ? "10px 0 25px" : "10px 0";
+    answerRef.current.style.marginBottom = active ? "25px" : "0";
+  }, [active]);
+
+  useEffect(() => {
+    questionRef.current.style.backgroundColor = active
+      ? "rgba(131, 56, 236, 0.1)"
+      : "white";
+  }, [active]);
 
   const toogleActive = () => {
     setActive(!active);
