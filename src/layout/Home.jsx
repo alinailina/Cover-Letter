@@ -35,7 +35,7 @@ const Home = () => {
       </section>
 
       <section className={css.intro} id="hi">
-        <h3>Hello</h3>
+        <h3>Hello,</h3>
         <div>
           <p>
             My name is Alina Ilina. I'm a Web Developer{" "}
@@ -49,7 +49,7 @@ const Home = () => {
 
       <section className={css.icons}>
         <div>
-          <h3>What I do</h3>
+          <h3>What I do:</h3>
           <div>
             <div>
               {" "}

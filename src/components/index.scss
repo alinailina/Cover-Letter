@@ -414,7 +414,10 @@ footer {
         font-family: $medium;
         font-size: 3rem;
         text-align: center;
-        padding: 50px 0;
+        padding: 25px 0;
+        @include desktop {
+          padding: 50px 0;
+        }
 
         @include phone {
           font-size: 8vw;
