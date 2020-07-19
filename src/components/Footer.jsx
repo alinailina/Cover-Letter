@@ -5,7 +5,8 @@ const Footer = () => {
     <footer>
       <div>
         <div>
-          <p>Get in touch</p>
+          <p>Drop me a line</p>
+          <p>I'd love to hear from you!</p>
         </div>
         <section>
           <a

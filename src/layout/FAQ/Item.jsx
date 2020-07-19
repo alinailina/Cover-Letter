@@ -8,8 +8,8 @@ const Item = ({ question, children }) => {
   useEffect(() => {
     answerRef.current.style.maxHeight = active
       ? `${answerRef.current.scrollHeight}px`
-      : "10px";
-    answerRef.current.style.padding = active ? "10px 0 25px" : "10px 0";
+      : "0px";
+    answerRef.current.style.padding = active ? "0 0 25px" : "0";
     answerRef.current.style.marginBottom = active ? "25px" : "0";
   }, [active]);
 

@@ -37,6 +37,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 10px;
 
         // Text
         p {
@@ -100,7 +101,7 @@
 
           span {
             color: $red;
-            font-family: $medium;
+            //font-family: $medium;
           }
         }
 

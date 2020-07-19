@@ -12,7 +12,7 @@
   {
     "id": 3,
     "question": "What technologies do you use?",
-    "answer": "<p>Here’s a list of tools and technologies that power my applications:</p><ul><li>&mdash; React.js<li>&mdash; Vanilla Javascript</li><li>&mdash; Node.js</li><li>&mdash; Axios</li><li>&mdash; Interfacing with REST API</li><li>&mdash; WordPress (as a headless CMS)</li><li>&mdash; Git version control</li><li>&mdash; iOS ecosystem</li><li>&mdash; Figma (design & prototyping)</li><li>&mdash; Material UI</li><li>&mdash; Bootstrap</li><li>&mdash; CSS/SASS</li><li>&mdash; HTML5</li></ul><p> Can’t find the desired technology on the list? <a href=“mailto:ai.foreach@gmail.com”>Drop a message</a>, let’s see if I can learn something new for your project!</p>"
+    "answer": "<p>Here’s a list of tools and technologies that power my applications:</p><ul><li>&mdash; React.js<li>&mdash; Vanilla Javascript</li><li>&mdash; Node.js</li><li>&mdash; Axios</li><li>&mdash; Interfacing with REST API</li><li>&mdash; WordPress (as a headless CMS)</li><li>&mdash; Git version control</li><li>&mdash; iOS ecosystem</li><li>&mdash; Figma (design & prototyping)</li><li>&mdash; Material UI</li><li>&mdash; Bootstrap</li><li>&mdash; CSS/SASS</li><li>&mdash; HTML5</li></ul><p>Your technology is not listed? <a href=“mailto:ai.foreach@gmail.com”>Drop a message</a>, let’s see if I can pick up something new for your project!</p>"
   },
 
   {

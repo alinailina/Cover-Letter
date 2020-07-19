@@ -400,7 +400,7 @@ aside {
 // Footer
 
 footer {
-  background-color: $black;
+  background-color: rgba(131, 56, 236, 0.25);
   padding: 25px 0;
   @include desktop {
     padding: 50px 0 25px;
@@ -410,14 +410,15 @@ footer {
     @include child-container;
 
     > div:first-of-type {
-      p {
+      padding: 25px 0;
+      @include desktop {
+        padding: 50px 0;
+      }
+      p:first-of-type {
         font-family: $medium;
         font-size: 3rem;
-        text-align: center;
-        padding: 25px 0;
-        @include desktop {
-          padding: 50px 0;
-        }
+        line-height: 1.5;
+        color: $black;
 
         @include phone {
           font-size: 8vw;
@@ -426,6 +427,11 @@ footer {
         @include desktop {
           font-size: 4vw;
         }
+      }
+      p:nth-of-type(2) {
+        @include text;
+        font-family: $regular;
+        color: $black;
       }
     }
 
@@ -442,7 +448,7 @@ footer {
       a {
         //@include border;
         @include heading;
-        color: $nude;
+        color: $black;
         text-decoration: none;
 
         &::after {
@@ -481,7 +487,7 @@ footer {
 
       a {
         @include heading;
-        color: $nude;
+        color: $black;
         text-decoration: none;
 
         &:hover {
@@ -525,7 +531,7 @@ footer {
       font-size: 1.5vw;
     }
 
-    color: $nude;
+    color: $black;
     text-align: center;
   }
 }
