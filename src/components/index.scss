@@ -187,6 +187,25 @@ nav {
       }
     }
   }
+
+  @include phone {
+    > div:first-of-type {
+      position: fixed;
+      width: 100vw;
+      height: 110px;
+      background-color: $nude;
+      z-index: 1;
+    }
+  }
+  @include tablet {
+    > div:first-of-type {
+      position: fixed;
+      width: 100vw;
+      height: 160px;
+      background-color: $nude;
+      z-index: 1;
+    }
+  }
 }
 
 // Sidebar

@@ -11,6 +11,7 @@ const Navbar = () => {
 
   return (
     <nav>
+      <div></div>
       <a href="/">
         <div className={active ? "logo active" : "logo"}>
           <p>
