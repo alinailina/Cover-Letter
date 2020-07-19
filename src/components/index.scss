@@ -3,7 +3,7 @@
 // Navbar
 nav {
   ul {
-    background-color: $yellow;
+    background-color: #e1cdfb;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -79,7 +79,7 @@ nav {
 
     p {
       font-family: $semi-bold;
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: $black;
       transition: color 1s ease;
       position: relative;
@@ -433,10 +433,12 @@ footer {
       @include desktop {
         padding: 50px 0;
       }
-      p:first-of-type {
-        font-family: $medium;
+
+      h2 {
         font-size: 3rem;
+        font-family: $medium;
         line-height: 1.5;
+        text-align: left;
         color: $black;
 
         @include phone {
@@ -447,9 +449,11 @@ footer {
           font-size: 4vw;
         }
       }
-      p:nth-of-type(2) {
+
+      p {
         @include text;
         font-family: $regular;
+        text-align: left;
         color: $black;
       }
     }
@@ -459,7 +463,9 @@ footer {
       //border: 1px solid red;
       display: flex;
       flex-direction: column;
+
       margin-bottom: 10px;
+
       @include desktop {
         margin-bottom: 25px;
       }
@@ -499,6 +505,7 @@ footer {
       //border: 1px solid red;
       display: flex;
       flex-direction: column;
+
       margin-bottom: 25px;
       @include desktop {
         margin-bottom: 50px;
