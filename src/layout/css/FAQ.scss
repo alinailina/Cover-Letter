@@ -6,19 +6,8 @@
     @include page-header;
   }
 
-  // Intro text
-  section:first-of-type {
-    padding: 0 0 50px;
-    @include child-container;
-
-    p {
-      @include text;
-    }
-  }
-
   // Accordion
   .accordion {
-    //border: 1px solid red;
     @include child-container;
 
     .item {
@@ -31,7 +20,7 @@
         cursor: pointer;
         display: flex;
         align-items: center;
-        border: 2px solid $black;
+        border: 1px solid $black;
         border-radius: 2px;
         padding: 10px 8px;
         display: flex;
@@ -97,6 +86,11 @@
         p {
           font-size: 1.25rem;
           line-height: 1.5;
+
+          @include desktop {
+            font-size: 1.5vw;
+          }
+
           padding: 15px 0;
 
           span {
@@ -104,7 +98,6 @@
             //font-family: $medium;
           }
         }
-
         a {
           font-size: inherit;
           color: inherit;
@@ -136,10 +129,13 @@
         ul {
           list-style: none;
           padding: 0;
-          // margin-bottom: 10px;
+
           li {
             font-size: 1.25rem;
             line-height: 1.5;
+            @include desktop {
+              font-size: 1.5vw;
+            }
           }
         }
       }
@@ -199,7 +195,7 @@
           border: none;
           font-size: 1.5rem;
           padding: 10px 2px;
-          border-bottom: 2px solid $black;
+          border-bottom: 1px solid $black;
 
           @include desktop {
             font-size: 2vw;
@@ -235,7 +231,7 @@
           font-family: $medium;
           font-size: 1.5rem;
           padding: 10px 0;
-          border: 2px solid $black;
+          border: 1px solid $black;
 
           @include desktop {
             width: 15vw;
@@ -251,7 +247,7 @@
 
           &:hover,
           &:active {
-            border: 2px solid $black;
+            border: 1px solid $black;
             color: $nude;
             background-color: $black;
             outline: none;

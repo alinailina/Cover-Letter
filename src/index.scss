@@ -235,24 +235,6 @@ $bold: "Brasley-Bold";
   }
 }
 
-// Headings
-@mixin sm-heading {
-  font-family: $medium;
-  line-height: 1.5;
-
-  @include phone {
-    font-size: 4vw;
-  }
-
-  @include tablet {
-    font-size: 2rem;
-  }
-
-  @include desktop {
-    font-size: 2vw;
-  }
-}
-
 // Normal text
 @mixin text {
   line-height: 1.5;

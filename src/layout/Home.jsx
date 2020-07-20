@@ -60,14 +60,22 @@ const Home = () => {
                   alt="desktop-screen"
                 />
               </div>
-              <p>Web development</p>
+              <h4>Web development</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                molestias aperiam?
+              </p>
             </div>
             <div>
               {" "}
               <div>
                 <img src={require("../assets/mobile.png")} alt="mobile-app" />
               </div>
-              <p>Mobile app development</p>
+              <h4>Mobile app development</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                molestias aperiam? Quis deleniti accusamus.
+              </p>
             </div>
             <div>
               {" "}
@@ -75,7 +83,11 @@ const Home = () => {
                 {" "}
                 <img src={require("../assets/ui.png")} alt="ui-design" />
               </div>
-              <p>User interface design</p>
+              <h4>User interface design</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                molestias aperiam.
+              </p>
             </div>
           </div>
         </div>

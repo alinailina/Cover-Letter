@@ -62,7 +62,7 @@
 
         input {
           border: none;
-          border-bottom: 2px solid $black;
+          border-bottom: 1px solid $black;
           background-color: inherit;
           outline: none;
           font-size: 1.5rem;
@@ -81,7 +81,7 @@
         font-family: $medium;
         font-size: 1.5rem;
         padding: 10px 0;
-        border: 2px solid $black;
+        border: 1px solid $black;
 
         @include desktop {
           width: 15vw;
@@ -97,7 +97,7 @@
 
         &:hover,
         &:active {
-          border: 2px solid $black;
+          border: 1px solid $black;
           color: $nude;
           background-color: $black;
           outline: none;
