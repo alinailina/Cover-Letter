@@ -8,10 +8,6 @@ import css from "./css/Home.module.scss";
 const Home = () => {
   return (
     <div className={css.container}>
-      <div>
-        <img src={require("../assets/duck.png")} alt="" />
-      </div>
-
       <section className={css.hero}>
         <div>
           <h1>
@@ -44,52 +40,6 @@ const Home = () => {
             mobile apps that meet high standards for usability, and scale.
           </p>
           <a href="/about">Read full story</a>
-        </div>
-      </section>
-
-      <section className={css.icons}>
-        <div>
-          <h3>What I do:</h3>
-          <div>
-            <div>
-              {" "}
-              <div>
-                {" "}
-                <img
-                  src={require("../assets/desktop.png")}
-                  alt="desktop-screen"
-                />
-              </div>
-              <h4>Web development</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-                molestias aperiam?
-              </p>
-            </div>
-            <div>
-              {" "}
-              <div>
-                <img src={require("../assets/mobile.png")} alt="mobile-app" />
-              </div>
-              <h4>Mobile app development</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-                molestias aperiam? Quis deleniti accusamus.
-              </p>
-            </div>
-            <div>
-              {" "}
-              <div>
-                {" "}
-                <img src={require("../assets/ui.png")} alt="ui-design" />
-              </div>
-              <h4>User interface design</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-                molestias aperiam.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
