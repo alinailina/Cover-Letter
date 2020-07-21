@@ -1,6 +1,19 @@
 @import "../../index.scss";
 
 .container {
+  // Hero img
+  > div:first-of-type {
+    //border: 1px solid red;
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+
+    img {
+      //border: 1px solid red;
+      width: 100%;
+    }
+  }
+
   // Hero screen
   .hero {
     height: 100vh;
@@ -25,7 +38,7 @@
         margin-top: 150px;
 
         span {
-          font-size: 5vw;
+          font-size: 0.5em;
           color: $red;
           position: relative;
           left: -5px;
@@ -34,9 +47,6 @@
 
         @include tablet {
           font-size: 17vw;
-          span {
-            font-size: 5.5vw;
-          }
         }
       }
 
@@ -66,7 +76,7 @@
           font-family: $medium;
           font-size: 1.5rem;
           padding: 10px 0;
-          border: 1px solid $black;
+          border: 2px solid $black;
           margin-right: 25px;
 
           @include desktop {
@@ -75,7 +85,7 @@
             font-size: 2vw;
           }
 
-          border-radius: 2px;
+          border-radius: 50px;
           color: $black;
           background-color: $nude;
           cursor: pointer;

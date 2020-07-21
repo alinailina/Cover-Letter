@@ -8,6 +8,10 @@ import css from "./css/Home.module.scss";
 const Home = () => {
   return (
     <div className={css.container}>
+      <div>
+        <img src={require("../assets/hero.png")} alt="" />
+      </div>
+
       <section className={css.hero}>
         <div>
           <h1>
