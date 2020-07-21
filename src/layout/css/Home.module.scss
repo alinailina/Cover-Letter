@@ -14,8 +14,8 @@
     }
   }
 
-  // Hero screen
-  .hero {
+  // Hero text
+  section:first-of-type {
     height: 100vh;
     width: 80%;
     margin: 0 auto;
@@ -34,31 +34,26 @@
       h1 {
         //@include border;
         font-family: $semi-bold;
+        letter-spacing: -0.5vw;
         font-size: 15vw;
         margin-top: 150px;
 
         span {
           font-size: 0.5em;
+          letter-spacing: 0;
           color: $red;
           position: relative;
-          left: -5px;
           z-index: -1;
-        }
-
-        @include tablet {
-          font-size: 17vw;
         }
       }
 
       // Tagline
       h2 {
+        font-family: $medium;
         font-size: 3vw;
-        @include tablet {
-          font-size: 2.5vw;
-        }
-
-        line-height: 1.5;
-        padding: 0 0 25px;
+        line-height: 1.25;
+        padding: 0 0 10px;
+        letter-spacing: -2px;
 
         span {
           color: $red;
@@ -131,24 +126,35 @@
         }
       }
 
-      @include phone {
+      @include tablet {
         // Name
         h1 {
-          font-size: 24vw;
-          letter-spacing: -1px;
+          font-size: 18vw;
+          letter-spacing: -2px;
           span {
-            font-size: 8vw;
-            left: -5px;
+            left: -3px;
           }
         }
 
         // Tagline
         h2 {
-          font-family: $medium;
+          font-size: 4vw;
+        }
+      }
+
+      @include phone {
+        // Name
+        h1 {
+          font-size: 24vw;
+          letter-spacing: -2px;
+          span {
+            left: -3px;
+          }
+        }
+
+        // Tagline
+        h2 {
           font-size: 6vw;
-          line-height: 1.25;
-          padding: 0 0 10px;
-          letter-spacing: -1px;
         }
 
         // CTA
@@ -170,32 +176,32 @@
     }
   }
 
-  // Intro text
-  .intro {
+  // About text
+  section:nth-of-type(2) {
     // @include border;
     @include child-container;
     padding: 200px 0 100px;
     display: flex;
+    flex-direction: column;
 
     // Hello
     h3 {
       // @include border;
-      display: block;
-      width: 30%;
-      font-size: 3rem;
+      font-size: 2.8rem;
       font-family: $medium;
       @include phone {
-        font-size: 8vw;
+        font-size: 7vw;
       }
 
       @include desktop {
-        font-size: 4vw;
+        font-size: 3.5vw;
       }
+
+      margin-bottom: 25px;
     }
 
     // Text
     > div {
-      width: 70%;
       p {
         @include text;
         margin-bottom: 25px;
@@ -241,113 +247,6 @@
 
     @include phone {
       padding: 150px 0 50px;
-      flex-direction: column;
-
-      h3 {
-        margin-bottom: 25px;
-      }
-
-      > div {
-        width: 100%;
-      }
-    }
-  }
-
-  .icons {
-    > div {
-      //@include border;
-      padding: 100px 0;
-      width: 80%;
-
-      @include phone {
-        padding: 25px 0;
-        width: 90%;
-      }
-
-      @include desktop {
-        padding: 4vw 0;
-        width: 70%;
-      }
-
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      h3 {
-        @include heading;
-        padding: 0 0 50px;
-
-        @include phone {
-          padding: 0 0 25px;
-        }
-      }
-
-      > div {
-        //@include border;
-        display: flex;
-        justify-content: space-between;
-
-        > div {
-          // @include border;
-          width: 32%;
-
-          @include desktop {
-            width: 28%;
-          }
-
-          h4 {
-            @include text;
-            text-align: center;
-            max-width: 7em;
-            margin: 0 auto;
-            margin-bottom: 10px;
-          }
-
-          p {
-            font-size: 1.25rem;
-            text-align: center;
-            line-height: 1.5;
-            color: gray;
-          }
-
-          > div {
-            width: 80%;
-            margin: 0 auto;
-            img {
-              width: 100%;
-            }
-          }
-        }
-
-        @include phone {
-          flex-direction: column;
-          align-items: center;
-
-          > div {
-            width: 100%;
-            margin-bottom: 25px;
-
-            > div {
-              width: 50%;
-              margin: 0 auto;
-            }
-
-            h4 {
-              padding: 0;
-              max-width: 20em;
-            }
-
-            &:nth-of-type(2) {
-              h4 {
-                position: relative;
-                top: -10px;
-                z-index: -1;
-              }
-            }
-          }
-        }
-      }
     }
   }
 }

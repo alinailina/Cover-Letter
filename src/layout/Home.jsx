@@ -9,10 +9,12 @@ const Home = () => {
   return (
     <div className={css.container}>
       <div>
-        <img src={require("../assets/hero.png")} alt="" />
+        <img
+          src={require("../assets/hero.png")}
+          alt="finger-tapping-lightning"
+        />
       </div>
-
-      <section className={css.hero}>
+      <section>
         <div>
           <h1>
             ai
@@ -34,7 +36,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={css.intro} id="hi">
+      <section id="hi">
         <h3>Hello,</h3>
         <div>
           <p>

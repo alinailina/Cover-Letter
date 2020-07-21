@@ -5,41 +5,52 @@ const Footer = () => {
     <footer>
       <div>
         <div>
-          <h2>Drop me a line</h2>
-          <p>I'd love to hear from you :)</p>
+          <h4>
+            {" "}
+            <a href="tel:+358465935910">
+              <span>T.</span> +358465935910
+            </a>
+          </h4>
+          <h4>
+            <a href="mailto:ai.foreach@gmail.com">
+              <span>E.</span> ai.foreach@gmail.com
+            </a>
+          </h4>
+          <h4>
+            <a href="/">CV</a>
+          </h4>
         </div>
-        <section>
-          <a
-            href="https://www.linkedin.com/in/alinailina/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Linkedin
-          </a>
-          <a
-            href="https://twitter.com/icode_ergosum"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Twitter
-          </a>
-          <a
-            href="https://github.com/alinailina"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
-        </section>
-        <section>
-          <a href="tel:+358465935910">
-            <span>T.</span> +358465935910
-          </a>
-          <a href="mailto:ai.foreach@gmail.com">
-            <span>E.</span> ai.foreach@gmail.com
-          </a>
-          <a href="/">CV</a>
-        </section>
+
+        <div>
+          <h4>
+            {" "}
+            <a
+              href="https://www.linkedin.com/in/alinailina/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Linkedin
+            </a>
+          </h4>
+          <h4>
+            <a
+              href="https://twitter.com/icode_ergosum"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
+          </h4>
+          <h4>
+            <a
+              href="https://github.com/alinailina"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+          </h4>
+        </div>
       </div>
 
       <p>© - ai.foreach, 2020.</p>
