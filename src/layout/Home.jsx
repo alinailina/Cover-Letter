@@ -10,7 +10,7 @@ const Home = () => {
     <div className={css.container}>
       <div>
         <img
-          src={require("../assets/hero.png")}
+          src={require("../assets/hero.jpg")}
           alt="finger-tapping-lightning"
         />
       </div>
