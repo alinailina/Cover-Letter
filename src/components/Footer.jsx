@@ -4,6 +4,8 @@ const Footer = () => {
   return (
     <footer>
       <div>
+        <h3>Get in touch</h3>
+        <p>I'd love to hear from you :)</p>
         <div>
           <h4>
             {" "}

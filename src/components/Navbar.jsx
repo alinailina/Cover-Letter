@@ -14,10 +14,7 @@ const Navbar = () => {
       <div></div>
       <a href="/">
         <div className={active ? "logo active" : "logo"}>
-          <img
-            src={require("../assets/logo.png")}
-            alt="finger-tapping-lightning"
-          />
+          <img src={require("../assets/logo.png")} alt="circle" />
         </div>
       </a>
       <div

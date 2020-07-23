@@ -2,6 +2,7 @@
 
 // Navbar
 nav {
+  // Quick fix for content overflow
   > div:first-of-type {
     //@include border;
     position: fixed;
@@ -89,19 +90,16 @@ nav {
     }
     position: fixed;
     z-index: 2;
+
     @include phone {
-      top: 20px;
+      width: 40px;
+      top: 25px;
       left: 20px;
     }
 
     @include tablet {
       top: 30px;
       left: 30px;
-    }
-
-    @include desktop {
-      top: 60px;
-      left: 35px;
     }
   }
 
@@ -194,12 +192,10 @@ nav {
       align-items: center;
       justify-content: center;
       position: fixed;
-
       top: 3.5vw;
       right: 3vw;
       height: auto;
       width: auto;
-
       z-index: 1;
 
       li {
@@ -223,24 +219,10 @@ nav {
     }
 
     .logo {
-      //@include border;
-      top: 3.5vw;
+      width: 3vw;
+      top: 3vw;
       left: 3vw;
       z-index: 2;
-
-      p {
-        font-size: 2.5vw;
-        transition: color 1s ease;
-        position: relative;
-        left: -1px;
-        top: 1px;
-
-        span {
-          font-size: 0.5em;
-          position: relative;
-          left: -1px;
-        }
-      }
     }
 
     .toggle {
@@ -341,6 +323,25 @@ footer {
       width: 80%;
     }
 
+    h3 {
+      display: none;
+      font-size: 6vw;
+      text-align: center;
+
+      @include phone {
+        display: block;
+      }
+    }
+
+    p {
+      display: none;
+      @include phone {
+        display: block;
+      }
+      @include text;
+      margin-bottom: 25px;
+    }
+
     //Contact info
     > div:first-of-type {
       width: 50%;
@@ -360,6 +361,10 @@ footer {
 
           &:hover {
             text-decoration: underline;
+          }
+
+          @include phone {
+            font-family: $medium;
           }
         }
 
@@ -412,7 +417,9 @@ footer {
           @include text;
           color: $black;
           text-decoration: none;
-
+          @include phone {
+            font-family: $medium;
+          }
           &::after {
             content: "\2197";
             position: relative;
