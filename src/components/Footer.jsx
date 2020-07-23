@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <h3>Get in touch</h3>
-        <p>I'd love to hear from you :)</p>
         <div>
+          <h3>Get in touch</h3>
+          <p>I'd love to hear from you :)</p>
           <h4>
             {" "}
             <a href="tel:+358465935910">

@@ -84,21 +84,22 @@ nav {
   }
 
   .logo {
-    width: 50px;
     img {
       width: 100%;
     }
+
     position: fixed;
     z-index: 2;
 
     @include phone {
       width: 40px;
-      top: 25px;
+      top: 15px;
       left: 20px;
     }
 
     @include tablet {
-      top: 30px;
+      width: 50px;
+      top: 25px;
       left: 30px;
     }
   }
@@ -220,7 +221,7 @@ nav {
 
     .logo {
       width: 3vw;
-      top: 3vw;
+      top: 2vw;
       left: 3vw;
       z-index: 2;
     }
@@ -323,25 +324,6 @@ footer {
       width: 80%;
     }
 
-    h3 {
-      display: none;
-      font-size: 6vw;
-      text-align: center;
-
-      @include phone {
-        display: block;
-      }
-    }
-
-    p {
-      display: none;
-      @include phone {
-        display: block;
-      }
-      @include text;
-      margin-bottom: 25px;
-    }
-
     //Contact info
     > div:first-of-type {
       width: 50%;
@@ -351,6 +333,23 @@ footer {
       @include phone {
         width: 100%;
         margin-bottom: 25px;
+      }
+
+      h3 {
+        @include heading;
+        @include phone {
+          text-align: center;
+        }
+      }
+
+      p {
+        @include text;
+        font-family: $regular;
+        text-align: left;
+        margin-bottom: 25px;
+        @include phone {
+          text-align: center;
+        }
       }
 
       h4 {

@@ -14,7 +14,7 @@ const Navbar = () => {
       <div></div>
       <a href="/">
         <div className={active ? "logo active" : "logo"}>
-          <img src={require("../assets/logo.png")} alt="circle" />
+          <img src={require("../assets/logo-4.png")} alt="circle" />
         </div>
       </a>
       <div
