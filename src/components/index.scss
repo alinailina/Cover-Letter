@@ -19,7 +19,7 @@ nav {
   }
 
   ul {
-    background-color: #e1cdfb;
+    background-color: $black;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@ nav {
         font-family: $medium;
         font-size: 3rem;
         line-height: 1.5;
-        color: $black;
+        color: $white;
         text-align: center;
         text-decoration: none;
 
@@ -66,6 +66,7 @@ nav {
         p {
           font-size: 1rem;
           font-family: $medium;
+          color: $red;
           padding: 25px 0 25px;
 
           @include desktop {
@@ -82,41 +83,25 @@ nav {
   }
 
   .logo {
-    //@include border;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 60px;
-    left: 35px;
-    z-index: 2;
-
-    p {
-      font-family: $medium;
-      font-size: 2rem;
-      color: $black;
-      transition: color 1s ease;
-      position: relative;
-      left: -1px;
-      top: 1px;
-
-      span {
-        font-family: $semi-bold;
-        color: $red;
-        font-size: 0.5em;
-        position: relative;
-        left: -1px;
-      }
+    width: 50px;
+    img {
+      width: 100%;
     }
-
+    position: fixed;
+    z-index: 2;
     @include phone {
-      top: 30px;
+      top: 20px;
       left: 20px;
     }
 
     @include tablet {
-      top: 40px;
+      top: 30px;
       left: 30px;
+    }
+
+    @include desktop {
+      top: 60px;
+      left: 35px;
     }
   }
 
@@ -184,11 +169,13 @@ nav {
         &:before {
           top: 0;
           transform: rotate(45deg);
+          background-color: $red;
         }
 
         &:after {
           top: 0;
           transform: rotate(135deg);
+          background-color: $red;
         }
       }
     }
@@ -336,7 +323,7 @@ nav {
 
 // Footer
 footer {
-  background-color: #e1cdfb;
+  background-color: $red;
   color: $black;
   padding: 50px 0 25px;
 

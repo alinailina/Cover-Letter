@@ -14,10 +14,10 @@ const Navbar = () => {
       <div></div>
       <a href="/">
         <div className={active ? "logo active" : "logo"}>
-          <p>
-            ai
-            <span>.foreach</span>
-          </p>
+          <img
+            src={require("../assets/logo.png")}
+            alt="finger-tapping-lightning"
+          />
         </div>
       </a>
       <div
