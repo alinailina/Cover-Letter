@@ -1,4 +1,5 @@
 import React from "react";
+import CV from "../assets/CV_ALINA_ILINA.pdf";
 
 const Footer = () => {
   return (
@@ -19,7 +20,9 @@ const Footer = () => {
             </a>
           </h4>
           <h4>
-            <a href="/">CV</a>
+            <a href={CV} target="_blank" rel="noopener noreferrer">
+              CV
+            </a>
           </h4>
         </div>
 
