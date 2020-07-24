@@ -225,6 +225,7 @@ $bold: "Brasley-Bold";
 
   @include phone {
     font-size: 6vw;
+    letter-spacing: -2px;
   }
 
   @include tablet {

@@ -7,15 +7,20 @@ nav {
     //@include border;
     position: fixed;
     width: 100vw;
-    height: 8vw;
+
     background-color: $white;
     z-index: 1;
 
     @include phone {
       height: 90px;
     }
+
     @include tablet {
       height: 110px;
+    }
+
+    @include desktop {
+      height: 8vw;
     }
   }
 
@@ -94,7 +99,7 @@ nav {
     @include phone {
       width: 60px;
       top: 35px;
-      left: 25px;
+      left: 20px;
     }
 
     @include tablet {
@@ -386,10 +391,6 @@ footer {
                 left: 8px;
               }
             }
-
-            &:hover {
-              color: $red;
-            }
           }
         }
       }
@@ -436,7 +437,7 @@ footer {
           }
 
           &:hover {
-            color: $red;
+            text-decoration: underline;
           }
         }
       }

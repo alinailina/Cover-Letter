@@ -36,7 +36,7 @@ const Footer = () => {
           </h4>
           <h4>
             <a
-              href="https://twitter.com/icode_ergosum"
+              href="https://twitter.com/aiforeach"
               target="_blank"
               rel="noopener noreferrer"
             >
