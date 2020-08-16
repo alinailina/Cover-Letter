@@ -6,36 +6,14 @@
   }
 
   section:first-of-type {
-    padding: 0 0 50px;
+    padding: 0 0 100px;
     @include child-container;
 
     p {
       @include text;
 
       a {
-        color: inherit;
-
-        &:hover {
-          color: $red;
-          text-decoration: none;
-        }
-
-        &::after {
-          content: "\2197";
-          position: relative;
-          top: -12px;
-          left: 2px;
-          display: inline-block;
-          z-index: -1;
-
-          @include tablet {
-            top: -10px;
-          }
-
-          @include phone {
-            top: -8px;
-          }
-        }
+        @include link;
       }
     }
 
@@ -62,7 +40,7 @@
 
         input {
           border: none;
-          border-bottom: 2px solid $black;
+          border-bottom: 1px solid $black;
           background-color: inherit;
           outline: none;
           font-size: 1.5rem;
@@ -78,27 +56,25 @@
 
       input[type="submit"] {
         width: 225px;
-        font-family: $medium;
         font-size: 1.5rem;
         padding: 10px 0;
-        border: 2px solid $black;
+        border: 1px solid $black;
 
         @include desktop {
           width: 15vw;
           min-width: 250px;
           font-size: 2vw;
         }
-
         border-radius: 50px;
         color: $black;
-        background-color: $nude;
+        background-color: white;
         cursor: pointer;
         -webkit-appearance: none;
 
         &:hover,
         &:active {
-          border: 2px solid $black;
-          color: $nude;
+          border: 1px solid $black;
+          color: white;
           background-color: $black;
           outline: none;
         }

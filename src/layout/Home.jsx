@@ -16,10 +16,7 @@ const Home = () => {
       </div>
       <section>
         <div>
-          <h1>
-            ai
-            <span>.foreach</span>
-          </h1>
+          <h1>Alina Ilina</h1>
           <h2>
             {" "}
             Web and mobile apps <br />
@@ -40,23 +37,24 @@ const Home = () => {
         <h3>Hello,</h3>
         <div>
           <p>
-            My name is Alina Ilina. I'm a Web Developer{" "}
-            <span>& UI Imagineer</span>, based in Helsinki, Finland. I make
-            clean, predictable and simply awesome user interfaces for web and
-            mobile apps that meet high standards for usability, and scale.
+            My name is Alina Ilina. I'm a Web Developer & UI Imagineer, based in
+            Helsinki, Finland. I make <span>clean</span>,{" "}
+            <span>predictable</span> and <span>simply awesome</span> user
+            interfaces for web and mobile apps that meet high standards for
+            usability, and scale.
           </p>
           <a href="/about">Read full story</a>
         </div>
       </section>
 
-      <section className="bottom-nav">
+      {/* <section className="bottom-nav">
         <div>
           <Link to="/portfolio">My works</Link>
         </div>
         <div>
           <Link to="/faq">FAQs</Link>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

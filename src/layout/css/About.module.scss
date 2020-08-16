@@ -9,38 +9,14 @@
   // Text
   section:first-of-type {
     @include child-container;
-    padding: 0 0 50px;
+    padding: 0 0 100px;
 
     p {
       @include text;
       margin-bottom: 25px;
 
       a {
-        font-size: inherit;
-        color: inherit;
-        transition: all 0.25s ease;
-
-        &:hover {
-          text-decoration: none;
-          color: $red;
-        }
-
-        &::after {
-          content: "\2197";
-          position: relative;
-          top: -12px;
-          left: 2px;
-          display: inline-block;
-          z-index: -1;
-
-          @include tablet {
-            top: -10px;
-          }
-
-          @include phone {
-            top: -8px;
-          }
-        }
+        @include link;
       }
     }
   }

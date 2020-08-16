@@ -16,12 +16,8 @@
 
   // Hero text
   section:first-of-type {
-    height: 100vh;
-    width: 80%;
-    margin: 0 auto;
-    @include phone {
-      width: 90%;
-    }
+    @include child-container;
+    height: 90vh;
     display: flex;
     align-items: center;
 
@@ -32,32 +28,20 @@
 
       // Name
       h1 {
-        //@include border;
-        font-family: $semi-bold;
-        letter-spacing: -0.5vw;
-        font-size: 15vw;
+        font-size: 6vw;
         margin-top: 150px;
-
-        span {
-          font-size: 0.5em;
-          letter-spacing: 0;
-          color: $red;
-          position: relative;
-          z-index: -1;
-        }
+        margin-bottom: 25px;
       }
 
       // Tagline
       h2 {
-        font-family: $medium;
-        font-size: 3vw;
+        @include heading;
+        font-weight: 400;
         line-height: 1.25;
-        padding: 0 0 10px;
-        letter-spacing: -2px;
-
         span {
-          color: $red;
+          color: $yellow;
         }
+        margin-bottom: 25px;
       }
 
       // CTA
@@ -68,10 +52,9 @@
         // Leave request
         input[type="submit"] {
           width: 225px;
-          font-family: $medium;
           font-size: 1.5rem;
           padding: 10px 0;
-          border: 2px solid $black;
+          border: 1px solid $black;
           margin-right: 25px;
 
           @include desktop {
@@ -82,15 +65,15 @@
 
           border-radius: 50px;
           color: $black;
-          background-color: $nude;
+          background-color: white;
           cursor: pointer;
           -webkit-appearance: none;
 
           &:hover,
           &:active {
-            border: 2px solid $black;
-            color: $nude;
+            border: 1px solid $black;
             background-color: $black;
+            color: white;
             outline: none;
           }
 
@@ -103,73 +86,39 @@
         a:last-of-type {
           display: block;
           padding: 25px 0;
-          font-family: $medium;
           font-size: 1.5rem;
+          font-weight: 400;
 
           @include desktop {
             font-size: 2vw;
           }
-          color: $black;
 
-          &::after {
-            content: " \2197";
-            position: relative;
-            top: -10px;
-            display: inline-block;
-            z-index: -1;
-          }
-
-          &:hover {
-            color: $red;
-            text-decoration: none;
-          }
+          @include link;
         }
       }
 
       @include tablet {
         // Name
         h1 {
-          font-size: 18vw;
-          letter-spacing: -2px;
-          span {
-            left: -3px;
-          }
-        }
-
-        // Tagline
-        h2 {
-          font-size: 4vw;
+          font-size: 8vw;
         }
       }
 
       @include phone {
         // Name
         h1 {
-          font-size: 24vw;
-          letter-spacing: -5px;
-          span {
-            left: -3px;
-          }
-        }
-
-        // Tagline
-        h2 {
-          font-size: 6vw;
+          font-size: 8vw;
         }
 
         // CTA
         > div:last-of-type {
           flex-direction: column;
           align-items: flex-start;
-          padding: 25px 0;
+          padding: 10px 0;
 
           // Learn more
           a:last-of-type {
             font-size: 1.5rem;
-
-            &::after {
-              top: -8px;
-            }
           }
         }
       }
@@ -180,7 +129,7 @@
   section:nth-of-type(2) {
     // @include border;
     @include child-container;
-    padding: 200px 0 100px;
+    padding: 300px 0 200px;
     display: flex;
     flex-direction: column;
 
@@ -188,7 +137,7 @@
     h3 {
       // @include border;
       font-size: 2.8rem;
-      font-family: $medium;
+
       @include phone {
         font-size: 7vw;
       }
@@ -204,49 +153,24 @@
     > div {
       p {
         @include text;
+
         margin-bottom: 25px;
         @include desktop {
           margin-bottom: 50px;
         }
         span {
-          font-family: $medium;
-          color: $red;
+          background-color: $yellow;
         }
       }
 
       a {
         @include text;
-        color: $black;
-        text-decoration: underline;
-        outline: none;
-        cursor: pointer;
-
-        &::after {
-          content: "\2197";
-          position: relative;
-          top: -12px;
-          left: 2px;
-          display: inline-block;
-          z-index: -1;
-
-          @include tablet {
-            top: -10px;
-          }
-
-          @include phone {
-            top: -8px;
-          }
-        }
-
-        &:hover {
-          color: $red;
-          text-decoration: none;
-        }
+        @include link;
       }
     }
 
     @include phone {
-      padding: 150px 0 50px;
+      padding: 200px 0 100px;
     }
   }
 }

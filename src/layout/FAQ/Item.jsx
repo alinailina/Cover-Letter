@@ -14,7 +14,8 @@ const Item = ({ question, children }) => {
   }, [active]);
 
   useEffect(() => {
-    questionRef.current.style.backgroundColor = active ? "#f5f5f5" : "white";
+    questionRef.current.style.backgroundColor = active ? "#f1f1f1" : "white";
+    questionRef.current.style.border = active ? "none" : "1px solid #2d2d2d";
   }, [active]);
 
   const toogleActive = () => {

@@ -91,40 +91,10 @@
           @include desktop {
             font-size: 1.5vw;
           }
-
           padding: 15px 10px;
-
-          span {
-            color: $red;
-            //font-family: $medium;
-          }
         }
         a {
-          font-size: inherit;
-          color: inherit;
-          transition: all 0.25s ease;
-
-          &:hover {
-            text-decoration: none;
-            color: $red;
-          }
-
-          &::after {
-            content: "\2197";
-            position: relative;
-            top: -12px;
-            left: 2px;
-            display: inline-block;
-            z-index: -1;
-
-            @include tablet {
-              top: -10px;
-            }
-
-            @include phone {
-              top: -8px;
-            }
-          }
+          @include link;
         }
 
         ul {
@@ -147,7 +117,7 @@
   .form {
     // border: 1px solid red;
     @include child-container;
-    padding: 100px 0 0;
+    padding: 100px 0 50px;
 
     h3 {
       @include heading;
@@ -159,8 +129,6 @@
     }
 
     form {
-      //border: 1px solid red;
-      background-color: $nude;
       display: flex;
       flex-direction: column;
       padding: 50px 0;
@@ -194,10 +162,9 @@
         input,
         textarea {
           border: none;
-          font-family: $regular;
           @include text;
           padding: 10px 2px;
-          border-bottom: 2px solid $black;
+          border-bottom: 1px solid $black;
 
           @include desktop {
             font-size: 2vw;
@@ -231,10 +198,9 @@
 
         input[type="submit"] {
           width: 225px;
-          font-family: $medium;
           font-size: 1.5rem;
           padding: 10px 0;
-          border: 2px solid $black;
+          border: 1px solid $black;
 
           @include desktop {
             width: 15vw;
@@ -244,7 +210,7 @@
 
           border-radius: 50px;
           color: $black;
-          background-color: $nude;
+          background-color: white;
           cursor: pointer;
           outline: none;
           -webkit-appearance: none;
@@ -252,7 +218,7 @@
           &:hover,
           &:active {
             border: 1px solid $black;
-            color: $nude;
+            color: white;
             background-color: $black;
             outline: none;
           }

@@ -1,41 +1,50 @@
 import React, { useState } from "react";
-
 import "./index.scss";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
 
-  const handleToggle = () => {
+  const toggleActive = () => {
     setActive(!active);
   };
 
   return (
     <nav>
-      <div></div>
-      <a href="/">
-        <div className={active ? "logo active" : "logo"}>
-          <img src={require("../assets/logo.png")} alt="circle" />
-        </div>
-      </a>
+      <div className="nav-logo">
+        <NavLink to="/">
+          <h3>[Logo]</h3>
+        </NavLink>
+      </div>
       <div
         className={active ? "toggle active" : "toggle"}
-        onClick={handleToggle}
+        onClick={toggleActive}
       >
         <div className="hamburger"></div>
       </div>
+
       <ul className={active ? "active" : ""}>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/portfolio">My works</a>
-        </li>
-        <li>
-          <a href="/faq">FAQ</a>
-        </li>
-        <li>
-          <p>© - ai.foreach, 2020.</p>
-        </li>
+        <NavLink
+          to="about"
+          onClick={toggleActive}
+          activeClassName="active-navlink"
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="portfolio"
+          onClick={toggleActive}
+          activeClassName="active-navlink"
+        >
+          My works
+        </NavLink>
+        <NavLink
+          to="faq"
+          onClick={toggleActive}
+          activeClassName="active-navlink"
+        >
+          FAQs
+        </NavLink>
       </ul>
     </nav>
   );

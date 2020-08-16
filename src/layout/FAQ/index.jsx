@@ -23,14 +23,14 @@ const FAQ = () => {
         </p>
         <Form />
       </section>
-      <section className="bottom-nav">
+      {/* <section className="bottom-nav">
         <div>
           <Link to="about">About</Link>
         </div>
         <div>
           <Link to="portfolio">My works</Link>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

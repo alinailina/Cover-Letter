@@ -2,248 +2,174 @@
 
 // Navbar
 nav {
-  // Quick fix for content overflow
-  > div:first-of-type {
-    //@include border;
-    position: fixed;
-    width: 100vw;
-
-    background-color: $white;
-    z-index: 1;
-
-    @include phone {
-      height: 90px;
-    }
-
-    @include tablet {
-      height: 110px;
-    }
-
-    @include desktop {
-      height: 8vw;
-    }
-  }
-
-  ul {
-    background-color: #f5f5f5;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: -100%;
-    height: 100%;
-    width: 100%;
-    transition-property: all;
-    transition-duration: 0.55s;
-    transition-delay: 0;
-    transition-timing-function: cubic-bezier(0.66, 0, 0.34, 1);
-    z-index: 1;
-
-    li {
-      a {
-        font-family: $medium;
-        font-size: 3rem;
-        line-height: 1.5;
-        color: $black;
-        text-align: center;
-        text-decoration: none;
-
-        @include phone {
-          font-size: 8vw;
-        }
-
-        @include desktop {
-          font-size: 4vw;
-        }
-
-        outline: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      &:last-of-type {
-        position: absolute;
-        bottom: 0;
-
-        p {
-          font-size: 1rem;
-          font-family: $medium;
-          color: $black;
-          padding: 25px 0 25px;
-
-          @include desktop {
-            font-size: 1.5vw;
-            padding: 25px 0;
-          }
-        }
-      }
-    }
-
-    &.active {
-      top: 0;
-    }
-  }
-
-  .logo {
-    img {
-      width: 100%;
-    }
-
-    position: fixed;
-    z-index: 2;
-
-    @include phone {
-      width: 60px;
-      top: 35px;
-      left: 20px;
-    }
-
-    @include tablet {
-      width: 70px;
-      top: 40px;
-      left: 30px;
-    }
-  }
-
-  .toggle {
-    width: 50px;
-    height: 50px;
-    display: block;
-    position: fixed;
-    right: 50px;
-    top: 50px;
-
-    @include phone {
-      right: 20px;
-      top: 15px;
-    }
-
-    @include tablet {
-      right: 30px;
-      top: 25px;
-    }
-
-    @include desktop {
-      right: 2.5vw;
-      top: 2.5vw;
-    }
-
-    padding: 5px;
-    cursor: pointer;
-    z-index: 2;
-
-    .hamburger {
-      width: 100%;
-      height: 2px;
-      border-radius: 10px;
-      background: $black;
-      transition: all 0.5s ease;
-      position: relative;
-      top: 25px;
-
-      &:before,
-      &:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: $black;
-        border-radius: 10px;
-        transition: 0.5s;
-      }
-
-      &:before {
-        top: -12px;
-      }
-
-      &:after {
-        top: 12px;
-      }
-    }
-
-    &.active {
-      z-index: 2;
-      .hamburger {
-        background: rgba(0, 0, 0, 0);
-
-        &:before {
-          top: 0;
-          transform: rotate(45deg);
-          //background-color: $red;
-        }
-
-        &:after {
-          top: 0;
-          transform: rotate(135deg);
-          //background-color: $red;
-        }
-      }
-    }
-  }
-
-  // Different nav for desktop
+  background-color: $gray;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100px;
   @include desktop {
+    height: 7vw;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  // Logo
+  > div {
+    //border: 1px solid red;
+    a {
+      text-decoration: none;
+      color: $black;
+
+      h3 {
+        @include text;
+        margin: 0;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  // Menu
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+
+    a {
+      //border: 1px solid;
+      @include text;
+      font-weight: 400;
+      padding: 20px 20px;
+      margin: 0 10px;
+      color: $black;
+      font-size: 1.1rem;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // Toggle
+  .toggle {
+    display: none;
+  }
+
+  // Mobile nav
+  @include phone {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+
+    .nav-logo {
+      position: fixed;
+      z-index: 2;
+      top: 20px;
+    }
+
     ul {
-      //border: 1px solid red;
-      background-color: rgba(0, 0, 0, 0);
-      list-style: none;
+      background-color: $yellow;
       display: flex;
-      flex-direction: row;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
       justify-content: center;
       position: fixed;
-      top: 3.5vw;
-      right: 3vw;
-      height: auto;
-      width: auto;
+      top: 0;
+      right: -100%;
+      height: 100%;
+      width: 50%;
+      padding: 25px;
+      transition-property: all;
+      transition-duration: 0.55s;
+      transition-delay: 0;
+      transition-timing-function: cubic-bezier(0.66, 0, 0.34, 1);
       z-index: 1;
 
-      li {
-        a {
-          @include text;
-          font-family: $medium;
-          color: $black;
-          text-decoration: none;
-          outline: none;
-          padding: 0 25px;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-
-        &:last-of-type {
-          display: none;
-        }
+      a {
+        font-size: 2rem;
+        padding: 10px;
       }
-    }
 
-    .logo {
-      width: 5vw;
-      top: 3.5vw;
-      left: 3vw;
-      z-index: 2;
+      &.active {
+        right: 0;
+      }
     }
 
     .toggle {
-      display: none;
+      //border: 1px solid red;
+      width: 50px;
+      height: 50px;
+      display: block;
+      position: fixed;
+      right: 15px;
+      top: 15px;
+      padding: 5px;
+      cursor: pointer;
+      z-index: 2;
+
+      .hamburger {
+        width: 100%;
+        height: 3px;
+        border-radius: 10px;
+        background: $black;
+        transition: all 0.5s ease;
+        position: relative;
+        top: 20px;
+
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background: $black;
+          border-radius: 10px;
+          transition: 0.5s;
+        }
+
+        &:before {
+          top: -12px;
+        }
+
+        &:after {
+          top: 12px;
+        }
+      }
+
+      &.active {
+        z-index: 2;
+        .hamburger {
+          background: rgba(0, 0, 0, 0);
+
+          &:before {
+            top: 0;
+            transform: rotate(45deg);
+            //background-color: $red;
+          }
+
+          &:after {
+            top: 0;
+            transform: rotate(135deg);
+            //background-color: $red;
+          }
+        }
+      }
     }
   }
 }
 
+.active-navlink {
+  text-decoration: underline;
+}
+
 // Bottom nav
 .bottom-nav {
-  margin: 50px auto 100px;
+  background-color: $gray;
+  padding: 50px 0;
   display: flex;
 
   > div {
-    //border: 1px solid red;
     width: 50%;
     height: 15vw;
     display: flex;
@@ -252,41 +178,41 @@ nav {
     justify-content: center;
 
     a {
-      font-family: $medium;
+      font-weight: 400;
       font-size: 2.5rem;
       color: $black;
       text-decoration: none;
       outline: none;
-      margin-bottom: 10px;
-
-      &:hover {
-        color: $red;
-      }
 
       &::after {
-        content: " \2197";
-        position: relative;
-        top: -14px;
-        left: 6px;
+        content: "\2197";
         display: inline-block;
-        z-index: -1;
-        font-family: $regular;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.7em;
+        position: relative;
+        top: -30px;
+        left: 5px;
+
+        @include tablet {
+          top: -25px;
+        }
 
         @include phone {
-          top: -10px;
-          left: 4px;
+          top: -20px;
         }
+      }
+
+      &:hover {
+        text-decoration: underline;
       }
     }
 
     &:first-of-type {
-      border-right: 2px solid $black;
+      border-right: 1px solid $black;
     }
   }
 
   @include phone {
-    margin: 25px auto 50px;
-
     > div {
       height: 25vw;
 
@@ -297,8 +223,7 @@ nav {
   }
 
   @include desktop {
-    margin: 75px auto 125px;
-
+    padding: 5vw 0;
     > div {
       height: 10vw;
 
@@ -311,134 +236,62 @@ nav {
 
 // Footer
 footer {
-  background-color: $red;
-  color: $black;
-  padding: 50px 0 25px;
+  padding: 50px 0;
+  background-color: $gray;
 
   > div {
     display: flex;
 
-    @include phone {
+    @media only screen and (max-width: 1000px) {
       flex-direction: column;
     }
 
-    width: 90%;
+    @include child-container;
     margin: 0 auto;
-
-    @include desktop {
-      width: 80%;
-    }
 
     //Contact info
     > div:first-of-type {
       width: 50%;
       display: flex;
       flex-direction: column;
-
-      @include phone {
+      @media only screen and (max-width: 1000px) {
         width: 100%;
         margin-bottom: 25px;
       }
 
       h3 {
         @include heading;
-        @include phone {
-          text-align: center;
-        }
-      }
-
-      p {
-        @include text;
-        font-family: $regular;
-        text-align: left;
         margin-bottom: 25px;
-        @include phone {
-          text-align: center;
-        }
       }
 
-      h4 {
-        a {
-          @include text;
-          color: $black;
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-
-          @include phone {
-            font-family: $medium;
-          }
-        }
-
-        &:last-of-type {
-          a {
-            &::after {
-              content: " \2197";
-              position: relative;
-              top: -14px;
-              left: 6px;
-              display: inline-block;
-
-              @include phone {
-                top: -10px;
-                left: 4px;
-              }
-
-              @include desktop {
-                top: -16px;
-                left: 8px;
-              }
-            }
-          }
-        }
+      a {
+        @include text;
+        @include link;
+        color: $black;
+        margin-bottom: 10px;
       }
     }
 
     // Social links
     > div:nth-of-type(2) {
-      //border: 1px solid red;
       width: 50%;
+      padding-top: 10px;
       display: flex;
-      @include phone {
+      justify-content: space-between;
+
+      a {
+        display: block;
+        width: 30%;
+        @include text;
+        @include link;
+      }
+
+      @media only screen and (max-width: 1000px) {
         width: 100%;
         flex-direction: column;
         margin-bottom: 25px;
-      }
-      justify-content: space-between;
-
-      h4 {
-        display: block;
-        width: 30%;
-
         a {
-          //@include border;
-          @include text;
-          color: $black;
-          text-decoration: none;
-          @include phone {
-            font-family: $medium;
-          }
-          &::after {
-            content: "\2197";
-            position: relative;
-            top: -12px;
-            left: 2px;
-            display: inline-block;
-
-            @include tablet {
-              top: -10px;
-            }
-
-            @include phone {
-              top: -8px;
-            }
-          }
-
-          &:hover {
-            text-decoration: underline;
-          }
+          margin-bottom: 10px;
         }
       }
     }
@@ -446,15 +299,11 @@ footer {
 
   // Copyright
   p {
-    // @include border;
     font-size: 1rem;
-    font-family: $medium;
-
+    font-weight: 400;
     @include desktop {
       font-size: 1.5vw;
     }
-
-    color: $black;
     text-align: center;
   }
 }

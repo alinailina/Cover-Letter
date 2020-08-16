@@ -40,14 +40,14 @@ const About = () => {
           Developer and a Human.
         </p>
       </section>
-      <section className="bottom-nav">
+      {/* <section className="bottom-nav">
         <div>
           <Link to="portfolio">My works</Link>
         </div>
         <div>
           <Link to="faq">FAQ</Link>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

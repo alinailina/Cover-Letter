@@ -32,14 +32,14 @@ const Portfolio = () => {
         </p>
       </section>
 
-      <section className="bottom-nav">
+      {/* <section className="bottom-nav">
         <div>
           <Link to="/about">About</Link>
         </div>
         <div>
           <Link to="/faq">FAQs</Link>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
