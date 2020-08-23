@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../assets/CV_ALINA_ILINA.pdf";
+import CV from "../assets/CV.pdf";
 
 const Footer = () => {
   return (
@@ -11,6 +11,7 @@ const Footer = () => {
           <a href="mailto:alinailina.random@gmail.com">
             alinailina.random@gmail.com
           </a>
+          <p>Helsinki, Finland</p>
           <a href={CV} target="_blank" rel="noopener noreferrer">
             Download CV
           </a>

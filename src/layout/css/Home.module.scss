@@ -132,17 +132,8 @@
     // Hello
     h3 {
       // @include border;
-      font-size: 2.8rem;
+      @include heading;
       text-transform: uppercase;
-
-      @include phone {
-        font-size: 7vw;
-      }
-
-      @include desktop {
-        font-size: 3.5vw;
-      }
-
       margin-bottom: 25px;
     }
 

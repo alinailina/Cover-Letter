@@ -11,9 +11,9 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="nav-logo">
+      <div>
         <NavLink to="/">
-          <h3>[Logo]</h3>
+          <img src={require("../assets/logo.svg")} alt="" />
         </NavLink>
       </div>
       <div

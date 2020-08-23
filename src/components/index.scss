@@ -16,16 +16,12 @@ nav {
 
   // Logo
   > div {
-    //border: 1px solid red;
+    margin-left: 2vw;
     a {
-      text-decoration: none;
-      color: $black;
-
-      h3 {
-        @include text;
-        text-transform: uppercase;
-        margin: 0;
-        padding: 0 20px;
+      display: block;
+      width: 4vw;
+      img {
+        width: 100%;
       }
     }
   }
@@ -57,16 +53,29 @@ nav {
     display: none;
   }
 
+  // Tablet nav
+  @include tablet {
+    // Logo
+    > div {
+      margin-left: 3vw;
+      a {
+        width: 6vw;
+      }
+    }
+  }
+
   // Mobile nav
   @include phone {
     position: fixed;
     width: 100%;
     height: 80px;
 
-    .nav-logo {
-      position: fixed;
-      z-index: 2;
-      top: 20px;
+    // Logo
+    > div {
+      margin-left: 4vw;
+      a {
+        width: 40px;
+      }
     }
 
     ul {
@@ -200,6 +209,11 @@ footer {
         margin-bottom: 25px;
       }
 
+      p {
+        @include text;
+        margin-bottom: 10px;
+      }
+
       a {
         @include text;
         color: $black;
@@ -239,7 +253,7 @@ footer {
   }
 
   // Copyright
-  p {
+  > p {
     font-size: 1rem;
     font-weight: 400;
     @include desktop {
