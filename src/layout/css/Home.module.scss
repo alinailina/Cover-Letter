@@ -88,13 +88,13 @@
           display: block;
           padding: 25px 0;
           font-size: 1.5rem;
-          font-weight: 400;
 
           @include desktop {
             font-size: 2vw;
           }
 
           @include link;
+          @include text;
         }
       }
 
@@ -116,11 +116,6 @@
           flex-direction: column;
           align-items: flex-start;
           padding: 10px 0;
-
-          // Learn more
-          a:last-of-type {
-            font-size: 1.5rem;
-          }
         }
       }
     }
