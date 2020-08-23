@@ -19,7 +19,7 @@ const About = () => {
             rel="noopener noreferrer"
           >
             Walt Disney Inc.
-          </a>{" "}
+          </a>
           , as I believe user interfaces tell a story, and nothing is more
           important to a good narrative than imagination).
         </p>
@@ -39,14 +39,6 @@ const About = () => {
           Developer and a Human.
         </p>
       </section>
-      {/* <section className="bottom-nav">
-        <div>
-          <Link to="portfolio">My works</Link>
-        </div>
-        <div>
-          <Link to="faq">FAQ</Link>
-        </div>
-      </section> */}
     </div>
   );
 };

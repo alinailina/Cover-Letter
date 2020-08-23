@@ -28,9 +28,10 @@
 
       // Name
       h1 {
-        font-size: 6vw;
+        font-size: 5vw;
         margin-top: 150px;
         margin-bottom: 25px;
+        text-transform: uppercase;
       }
 
       // Tagline
@@ -100,7 +101,7 @@
       @include tablet {
         // Name
         h1 {
-          font-size: 8vw;
+          font-size: 6vw;
         }
       }
 
@@ -137,6 +138,7 @@
     h3 {
       // @include border;
       font-size: 2.8rem;
+      text-transform: uppercase;
 
       @include phone {
         font-size: 7vw;

@@ -1,5 +1,4 @@
 import React from "react";
-
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 // Styles
@@ -10,7 +9,7 @@ const Home = () => {
     <div className={css.container}>
       <div>
         <img
-          src={require("../assets/hero.jpg")}
+          src={require("../assets/new-hero.svg")}
           alt="finger-tapping-lightning"
         />
       </div>
@@ -37,24 +36,15 @@ const Home = () => {
         <h3>Hello,</h3>
         <div>
           <p>
-            My name is Alina Ilina. I'm a Web Developer & UI Imagineer, based in
-            Helsinki, Finland. I make <span>clean</span>,{" "}
-            <span>predictable</span> and <span>simply awesome</span> user
+            My name is Alina Ilina. I'm{" "}
+            <span>a Web Developer & UI Imagineer</span>, based in Helsinki,
+            Finland. I make clean, predictable and simply awesome user
             interfaces for web and mobile apps that meet high standards for
             usability, and scale.
           </p>
           <a href="/about">Read full story</a>
         </div>
       </section>
-
-      {/* <section className="bottom-nav">
-        <div>
-          <Link to="/portfolio">My works</Link>
-        </div>
-        <div>
-          <Link to="/faq">FAQs</Link>
-        </div>
-      </section> */}
     </div>
   );
 };

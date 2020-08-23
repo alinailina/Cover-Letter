@@ -12,8 +12,8 @@ const Portfolio = () => {
       </header>
       <section>
         <p>
-          I'm working on something very interesting here. Check back in a bit,
-          or get notified when it's ready!{" "}
+          Something interesting is cooking here. Check back in a bit, or get
+          notified when it's ready!
         </p>
         <form name="get-update" method="post">
           <input type="hidden" name="form-name" value="get-update" />{" "}
@@ -31,15 +31,6 @@ const Portfolio = () => {
           how I can be of service today.
         </p>
       </section>
-
-      {/* <section className="bottom-nav">
-        <div>
-          <Link to="/about">About</Link>
-        </div>
-        <div>
-          <Link to="/faq">FAQs</Link>
-        </div>
-      </section> */}
     </div>
   );
 };
