@@ -25,6 +25,7 @@ $black: #2d2d2d;
 $yellow: rgb(255, 214, 10);
 $blue: rgb(100, 210, 255);
 $gray: #f1f1f1;
+
 * {
   padding: 0;
   margin: 0;
@@ -53,7 +54,12 @@ body {
   }
 }
 
-// Page headers
+// Text highlight
+@mixin highlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, $yellow 40%);
+}
+
+// Page header
 @mixin page-header {
   @include child-container;
   padding: 200px 0 50px;
@@ -78,7 +84,7 @@ body {
   }
 }
 
-// Headings
+// Heading
 @mixin heading {
   line-height: 1.5;
 
@@ -113,7 +119,7 @@ body {
   }
 }
 
-// Links
+// Link
 @mixin link {
   color: $black;
   text-decoration: underline;
@@ -141,28 +147,4 @@ body {
 // Border (dev purposes)
 @mixin border {
   border: 1px solid red;
-}
-
-@mixin arrow {
-  &::after {
-    content: "\2197";
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.75em;
-    position: relative;
-    top: -12px;
-    left: 2px;
-    display: inline-block;
-
-    @include tablet {
-      top: -10px;
-    }
-
-    @include phone {
-      top: -8px;
-    }
-  }
-}
-
-@mixin highlight {
-  background-color: $yellow;
 }

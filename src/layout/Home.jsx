@@ -19,7 +19,7 @@ const Home = () => {
           <h2>
             {" "}
             Web and mobile apps <br />
-            with a touch of <span>awe(some)</span>
+            with a touch of <span> awe(some)</span>
           </h2>
 
           <div>
