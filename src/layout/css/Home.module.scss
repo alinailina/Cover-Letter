@@ -36,9 +36,13 @@
 
       // Tagline
       h2 {
+        border: 1px solid;
         @include heading;
         font-weight: 300;
-        line-height: 1.25;
+        @include phone {
+          font-size: 5vw;
+        }
+
         span {
           @include highlight;
         }

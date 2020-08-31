@@ -88,8 +88,6 @@ body {
 
 // Heading
 @mixin heading {
-  line-height: 1.5;
-
   @include phone {
     font-size: 6vw;
   }
