@@ -7,11 +7,11 @@ const Footer = () => {
       <div>
         <div>
           <h3>Work with me</h3>
-          <a href="tel:+358465935910">T. +358465935910</a>
+          <a href="tel:+358465935910">+358465935910</a>
           <a href="mailto:alinailina.random@gmail.com">
-            E. alinailina.random@gmail.com
+            alinailina.random@gmail.com
           </a>
-          <p>A. Helsinki, Finland</p>
+          <p>Helsinki, Finland</p>
           <a href={CV} target="_blank" rel="noopener noreferrer">
             Download CV
           </a>
