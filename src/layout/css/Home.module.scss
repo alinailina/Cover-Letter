@@ -36,7 +36,6 @@
 
       // Tagline
       h2 {
-        border: 1px solid;
         @include heading;
         font-weight: 300;
         @include phone {
