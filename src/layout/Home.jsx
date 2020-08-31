@@ -19,7 +19,7 @@ const Home = () => {
           <h2>
             {" "}
             Web and mobile apps <br />
-            with a touch of <span> awe(some)</span>
+            with <span>a touch of awe(some)</span>
           </h2>
 
           <div>
@@ -37,10 +37,9 @@ const Home = () => {
         <div>
           <p>
             My name is Alina Ilina. I'm{" "}
-            <span>a Web Developer & UI Imagineer</span>, based in Helsinki,
-            Finland. I make clean, predictable and simply awesome user
-            interfaces for web and mobile apps that meet high standards for
-            usability, and scale.
+            <span>a Web Developer & UI Imagineer</span>. I make clean,
+            predictable and simply awesome user interfaces for web and mobile
+            apps that meet high standards for usability, and scale.
           </p>
           <a href="/about">Read full story</a>
         </div>

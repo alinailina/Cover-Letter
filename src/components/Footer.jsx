@@ -1,22 +1,17 @@
 import React from "react";
-import CV from "../assets/CV.pdf";
+import CV from "../assets/CV_ALINAILINA.pdf";
 
 const Footer = () => {
   return (
     <footer>
       <div>
         <div>
-          <h3>
-            Work with me{" "}
-            <span>
-              <img src={require("../assets/arrow.svg")} alt="arrow" />
-            </span>
-          </h3>
-          <a href="tel:+358465935910">+358465935910</a>
+          <h3>Work with me</h3>
+          <a href="tel:+358465935910">T. +358465935910</a>
           <a href="mailto:alinailina.random@gmail.com">
-            alinailina.random@gmail.com
+            E. alinailina.random@gmail.com
           </a>
-          <p>Helsinki, Finland</p>
+          <p>A. Helsinki, Finland</p>
           <a href={CV} target="_blank" rel="noopener noreferrer">
             Download CV
           </a>

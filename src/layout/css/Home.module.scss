@@ -16,7 +16,7 @@
 
   // Hero text
   section:first-of-type {
-    @include child-container;
+    @include container;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -37,10 +37,9 @@
       // Tagline
       h2 {
         @include heading;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.25;
         span {
-          //color: $yellow;
           @include highlight;
         }
         margin-bottom: 25px;
@@ -57,6 +56,9 @@
           font-size: 1.5rem;
           padding: 10px 0;
           border: 1px solid $black;
+          font-family: "Roboto Mono", monospace;
+          //font-weight: 300;
+          text-transform: uppercase;
           margin-right: 25px;
 
           @include desktop {
@@ -125,7 +127,7 @@
   // About text
   section:nth-of-type(2) {
     // @include border;
-    @include child-container;
+    @include container;
     padding: 300px 0 200px;
     display: flex;
     flex-direction: column;

@@ -8,7 +8,7 @@
 
   // Accordion
   .accordion {
-    @include child-container;
+    @include container;
 
     .item {
       display: flex;
@@ -92,6 +92,9 @@
             font-size: 1.5vw;
           }
           padding: 15px 10px;
+          span {
+            @include highlight;
+          }
         }
         a {
           @include link;
@@ -103,7 +106,7 @@
 
           li {
             font-size: 1.25rem;
-            line-height: 1.5;
+
             @include desktop {
               font-size: 1.5vw;
             }
@@ -116,7 +119,7 @@
   // Form
   .form {
     // border: 1px solid red;
-    @include child-container;
+    @include container;
     padding: 100px 0 50px;
 
     h3 {
@@ -165,6 +168,9 @@
           @include text;
           padding: 10px 2px;
           border-bottom: 1px solid $black;
+          font-family: "Roboto Mono", monospace;
+          font-weight: 300;
+          text-transform: uppercase;
 
           @include desktop {
             font-size: 2vw;
@@ -201,6 +207,8 @@
           font-size: 1.5rem;
           padding: 10px 0;
           border: 1px solid $black;
+          font-family: "Roboto Mono", monospace;
+          text-transform: uppercase;
 
           @include desktop {
             width: 15vw;

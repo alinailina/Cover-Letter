@@ -20,7 +20,6 @@ const Form = () => {
       </label>
       <div data-netlify-recapture="true"></div>
       <div>
-        {" "}
         <input type="submit" value="Submit" />
       </div>
     </form>
