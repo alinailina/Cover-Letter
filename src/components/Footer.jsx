@@ -23,28 +23,28 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/linkedin.svg")} alt="linkedin" />
+            Linkedin
           </a>
-          <a
+          {/* <a
             href="https://medium.com/@alinailina.random"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/medium.svg")} alt="medium" />
-          </a>
+            Medium
+          </a> */}
           <a
             href="https://twitter.com/alinaimagineer"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/twitter.svg")} alt="twitter" />
+            Twitter
           </a>
           <a
             href="https://github.com/alinailina"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/github.svg")} alt="github" />
+            Github
           </a>
         </div>
       </div>

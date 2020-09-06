@@ -32,7 +32,7 @@ const Navbar = () => {
           About
         </NavLink>
         <NavLink
-          to="portfolio"
+          to="myworks"
           onClick={toggleActive}
           activeClassName="active-navlink"
         >

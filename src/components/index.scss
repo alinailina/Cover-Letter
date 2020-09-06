@@ -227,13 +227,17 @@ footer {
 
     // Social links
     > div:nth-of-type(2) {
-      width: 40%;
+      width: 50%;
       padding-top: 10px;
       display: flex;
       justify-content: space-between;
 
       a {
-        width: 17.5%;
+        display: block;
+        @include text;
+        @include link;
+        text-align: center;
+        width: 30%;
 
         img {
           width: 100%;
@@ -246,7 +250,7 @@ footer {
         margin-bottom: 50px;
 
         a {
-          width: 17.5%;
+          width: 25%;
         }
       }
     }

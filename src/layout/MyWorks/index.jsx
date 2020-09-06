@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-// Styles
-import css from "./css/Portfolio.module.scss";
+import css from "./index.module.scss";
 
 const Portfolio = () => {
   return (
@@ -25,7 +23,6 @@ const Portfolio = () => {
             <input type="submit" value="Submit" />
           </div>
         </form>
-
         <p>
           In the meantime, check out my <Link to="/faq">FAQ</Link> page to find
           how I can be of service today.

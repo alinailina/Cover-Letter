@@ -10,7 +10,7 @@ import ScrollToTop from "./components/ScrollToTop";
 // Layout
 import Home from "./layout/Home";
 import About from "./layout/About";
-import Portfolio from "./layout/Portfolio";
+import MyWorks from "./layout/MyWorks";
 import FAQ from "./layout/FAQ";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/myworks" component={MyWorks} />
         <Route path="/faq" component={FAQ} />
       </Switch>
       <Footer />

@@ -1,16 +1,14 @@
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
-// Styles
-import css from "./css/Home.module.scss";
+import css from "./index.module.scss";
 
 const Home = () => {
   return (
     <div className={css.container}>
       <div>
         <img
-          src={require("../assets/new-hero.svg")}
-          alt="finger-tapping-lightning"
+          src={require("../../assets/hero.svg")}
+          alt="finger-tapping-yellow-circle"
         />
       </div>
       <section>
@@ -24,7 +22,7 @@ const Home = () => {
 
           <div>
             {" "}
-            <a href="mailto:ai.foreach@gmail.com?subject=App request for Alina Ilina">
+            <a href="mailto:alinailina.random@gmail.com?subject=App request for Alina Ilina">
               <input type="submit" value="Request app" />
             </a>
             <AnchorLink href="#hi">Learn more</AnchorLink>

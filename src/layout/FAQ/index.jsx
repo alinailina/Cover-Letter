@@ -1,7 +1,5 @@
 import React from "react";
-
-// Styles
-import "../css/FAQ.scss";
+import "./index.scss";
 
 // Children
 import Acc from "./Acc";

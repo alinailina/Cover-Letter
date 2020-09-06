@@ -1,5 +1,105 @@
 // Fonts (Roboto Mono 200,300,400,500,600)
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600&display=swap");
+// from https://google-webfonts-helper.herokuapp.com/fonts
+
+/* roboto-mono-200 - latin */
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./assets/fonts/roboto-mono-v12-latin-200.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/roboto-mono-v12-latin-200.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/roboto-mono-v12-latin-200.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/roboto-mono-v12-latin-200.woff") format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/roboto-mono-v12-latin-200.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/roboto-mono-v12-latin-200.svg#RobotoMono")
+      format("svg"); /* Legacy iOS */
+}
+
+/* roboto-mono-300 - latin */
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/roboto-mono-v12-latin-300.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/roboto-mono-v12-latin-300.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/roboto-mono-v12-latin-300.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/roboto-mono-v12-latin-300.woff") format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/roboto-mono-v12-latin-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/roboto-mono-v12-latin-300.svg#RobotoMono")
+      format("svg"); /* Legacy iOS */
+}
+
+/* roboto-mono-regular - latin */
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/roboto-mono-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/roboto-mono-v12-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/roboto-mono-v12-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/roboto-mono-v12-latin-regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("./assets/fonts/roboto-mono-v12-latin-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/roboto-mono-v12-latin-regular.svg#RobotoMono")
+      format("svg"); /* Legacy iOS */
+}
+
+/* roboto-mono-500 - latin */
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/roboto-mono-v12-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/roboto-mono-v12-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/roboto-mono-v12-latin-500.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/roboto-mono-v12-latin-500.woff") format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/roboto-mono-v12-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/roboto-mono-v12-latin-500.svg#RobotoMono")
+      format("svg"); /* Legacy iOS */
+}
+
+/* roboto-mono-600 - latin */
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/roboto-mono-v12-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/roboto-mono-v12-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/roboto-mono-v12-latin-600.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/roboto-mono-v12-latin-600.woff") format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/roboto-mono-v12-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/roboto-mono-v12-latin-600.svg#RobotoMono")
+      format("svg"); /* Legacy iOS */
+}
 
 // Media queries
 @mixin phone {
@@ -23,7 +123,6 @@
 // Colors
 $black: #2d2d2d;
 $yellow: rgb(255, 214, 10);
-$blue: rgb(100, 210, 255);
 $gray: #f1f1f1;
 
 * {
@@ -54,11 +153,6 @@ body {
   @include desktop {
     width: 70vw;
   }
-}
-
-// Text highlight
-@mixin highlight {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, $yellow 40%);
 }
 
 // Page header
@@ -108,11 +202,15 @@ body {
   }
 
   @include tablet {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
   }
 
   @include desktop {
-    font-size: 1.5vw;
+    font-size: 1.75rem;
+  }
+
+  @media only screen and (min-width: 1800px) {
+    font-size: 1.75vw;
   }
 }
 
@@ -125,20 +223,12 @@ body {
   &:hover {
     color: $yellow;
     text-decoration: none;
-
-    // &::after {
-    //   content: "\2197";
-    //   display: inline-block;
-    //   font-family: Arial, Helvetica, sans-serif;
-    //   font-size: 0.75em;
-    //   position: relative;
-    //   top: -15px;
-
-    //   @include phone {
-    //     top: -10px;
-    //   }
-    // }
   }
+}
+
+// Text highlight
+@mixin highlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, $yellow 40%);
 }
 
 // Border (dev purposes)
