@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../assets/CV_ALINAILINA.pdf";
+import CV from "../assets/ALINA_ILINA_CV.pdf";
 
 const Footer = () => {
   return (

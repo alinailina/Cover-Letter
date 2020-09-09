@@ -237,7 +237,7 @@ footer {
         @include text;
         @include link;
         text-align: center;
-        width: 30%;
+        width: 25%;
 
         img {
           width: 100%;
@@ -245,13 +245,9 @@ footer {
       }
 
       @media only screen and (max-width: 1000px) {
-        width: 100%;
+        width: 80%;
         max-width: 25em;
         margin-bottom: 50px;
-
-        a {
-          width: 25%;
-        }
       }
     }
   }

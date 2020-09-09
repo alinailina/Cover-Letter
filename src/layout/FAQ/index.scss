@@ -101,11 +101,15 @@
         }
 
         ul {
-          list-style: none;
-          padding: 0 10px;
+          list-style-type: none;
+          padding: 0 0 0 10px;
 
           li {
             font-size: 1.25rem;
+            margin-bottom: 5px;
+            span {
+              @include highlight;
+            }
 
             @include desktop {
               font-size: 1.5vw;
